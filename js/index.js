@@ -6,7 +6,7 @@ var dateMessage = "Today is " + days[today.getDay()] + ", " + months[today.getMo
 var greeting;
 var colors = ["blue", "red", "green", "yellow"];
 var pics = ["comoe.JPG", "slug.jpeg", "beard.JPG", "disney.jpg", "paco.JPG"]
-var songs = ["Avant Gardener.mp3", "Terry Riley - A Rainbow in Curved Air.mp3",
+var songs = ["Courtney Barnett - Avant Gardener.mp3", "Terry Riley - A Rainbow in Curved Air.mp3",
 			"Talking Heads - Moon Rocks.mp3", "Lake Street Dive - Rich Girl (Live at Pickathon 2013).mp3"];
 var colorIndex = 0;
 var picIndex = 0;
