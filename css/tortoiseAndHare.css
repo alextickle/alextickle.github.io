@@ -1,0 +1,9 @@
+#hareImage, #tortoiseImage {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.col-sm-10 {
+  border-right: black solid 4px;
+}

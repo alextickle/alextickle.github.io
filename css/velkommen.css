@@ -1,0 +1,22 @@
+h1 {
+	font-family: "Arial";
+	font-size: 200%;
+  }
+
+p {
+	color: Crimson;
+	text-align: left;
+  }
+
+img {
+	width: 200px;
+	height: 100px;
+}
+
+body {
+	background-image: url("../media/trondheim.jpg");
+}
+
+#home {
+  text-align: right;
+}

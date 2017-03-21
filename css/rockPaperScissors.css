@@ -1,0 +1,20 @@
+img {
+	height: 200px;
+	width: 200px;
+}
+
+h1, h5 {
+	text-align: center;
+}
+
+.computerSelected {
+	border: red solid 4px;
+}
+
+.playerSelected {
+	border: blue solid 4px;
+}
+
+#home {
+	text-align: right;
+}

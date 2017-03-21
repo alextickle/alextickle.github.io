@@ -1,0 +1,43 @@
+li {
+  color: white;
+}
+
+#terryHeader {
+  background-color: red;
+  color: white;
+  text-align: center;
+  border: solid yellow 3px;
+}
+
+#albums {
+  text-align: center;
+}
+
+#rainbow {
+  border: solid green 3px;
+}
+
+#persian {
+  border: solid blue 3px;
+}
+
+#inC {
+  border: solid red 3px;
+}
+
+#intro, #smintro {
+  background-color: #022c70;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+body {
+  background-color: #1967e5;
+}
+
+#home {
+  text-align: right;
+}

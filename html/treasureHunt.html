@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>Treasure Hunt</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+  <link href="../css/treasureHunt.css" rel="stylesheet" type="text/css"/>
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script src="../js/treasureHunt.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Treasure Hunt</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div id="instr" class="col-sm-3">
+          <h4>Instructions</h4>
+          <p>There are three bombs and three treasures hidden throughout the grid.
+            If you uncover a single bomb, you lose. You need to collect all three
+            treasures in order to win!</p>
+        </div>
+        <div class="col-sm-7">
+          <table>
+            <tr>
+              <td id="0" class="cells">?</td>
+              <td id="1" class="cells">?</td>
+              <td id="2" class="cells">?</td>
+              <td id="3" class="cells">?</td>
+              <td id="4" class="cells">?</td>
+            </tr>
+            <tr>
+              <td id="5" class="cells">?</td>
+              <td id="6" class="cells">?</td>
+              <td id="7" class="cells">?</td>
+              <td id="8" class="cells">?</td>
+              <td id="9" class="cells">?</td>
+            </tr>
+            <tr>
+              <td id="10" class="cells">?</td>
+              <td id="11" class="cells">?</td>
+              <td id="12" class="cells">?</td>
+              <td id="13" class="cells">?</td>
+              <td id="14" class="cells">?</td>
+            </tr>
+            <tr>
+              <td id="15" class="cells">?</td>
+              <td id="16" class="cells">?</td>
+              <td id="17" class="cells">?</td>
+              <td id="18" class="cells">?</td>
+              <td id="19" class="cells">?</td>
+            </tr>
+            <tr>
+              <td id="20" class="cells">?</td>
+              <td id="21" class="cells">?</td>
+              <td id="22" class="cells">?</td>
+              <td id="23" class="cells">?</td>
+              <td id="24" class="cells">?</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-2">
+          <p id="chat">Get searching!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="inactive" id="counter">25</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div id="home" class="col-sm-12">
+          <p><a href="../mainPage.html">Home</a></p>
+        </div>
+      </div>
+    </div>
+    <audio id='audio' controls="controls">
+      <source id="musicPlayer" src="../media/effects/applause.mp3" type="audio/mp3">
+    </audio>
+  </body>
+</html>

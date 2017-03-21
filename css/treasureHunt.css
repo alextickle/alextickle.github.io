@@ -1,0 +1,58 @@
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 500px;
+  height: 500px;
+  overflow:hidden;
+  table-layout:fixed;
+}
+
+td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  background-color: green;
+  border: solid blue 2px;
+  color: yellow;
+}
+
+h3 {
+  text-align: center;
+}
+
+.hover {
+  background-color: pink;
+  border: red solid 2px;
+}
+
+.bomb {
+  background-color: black;
+  color: white;
+  border: grey solid 2px;
+}
+
+.treasure {
+  background-color: yellow;
+  border: solid red 2px;
+}
+
+#instr {
+  background-color: red;
+  border: solid blue 2px;
+  color: white;
+}
+
+.empty {
+  background-color: grey;
+}
+
+#home {
+  text-align: right;
+}
+
+.inactive{
+  visibility: hidden;
+}

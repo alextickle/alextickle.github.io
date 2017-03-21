@@ -1,0 +1,48 @@
+#dateBox {
+	border-style: dashed;
+	border-width: 4px 2px 4px 2px;
+	border-color: orange;
+	border-radius: 10px;
+	background-color: powderblue;
+}
+
+#picOfMe {
+	border: green solid 2px;
+	color: white;
+}
+
+#intro {
+	background-color: crimson;
+	color: white;
+	border: yellow solid 2px;
+}
+
+#listOfPages {
+	background-color: crimson;
+	color: white;
+	border: yellow solid 2px;
+	text-align: left;
+}
+
+ li:hover {
+	 background-color: yellow;
+ }
+
+ li:visited {
+	 color: green;
+ }
+
+ #jukebox {
+	background-color: crimson;
+ 	color: white;
+ 	border: yellow solid 2px;
+ }
+
+ button {
+	 background-color: blue;
+	 color: white;
+ }
+
+ body {
+	 background-image: url("../media/olivier.jpg");
+ }
