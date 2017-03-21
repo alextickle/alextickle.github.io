@@ -52,19 +52,19 @@ Cards[11] = new Card("Queen of Clubs", 10, "queen_of_clubs.png");
 Cards[12] = new Card("King of Clubs", 10, "king_of_clubs.png");
 
 // Spades
-Cards[13] = new Card("Ace of Spades", 1, "ace_of_Spades.png");
-Cards[14] = new Card("Two of Spades", 2, "2_of_Spades.png");
-Cards[15] = new Card("Three of Spades", 3, "3_of_Spades.png");
-Cards[16] = new Card("Four of Spades", 4, "4_of_Spades.png");
-Cards[17] = new Card("Five of Spades", 5, "5_of_Spades.png");
-Cards[18] = new Card("Six of Spades", 6, "6_of_Spades.png");
-Cards[19] = new Card("Seven of Spades", 7, "7_of_Spades.png");
-Cards[20] = new Card("Eight of Spades", 8, "8_of_Spades.png");
-Cards[21] = new Card("Nine of Spades", 9, "9_of_Spades.png");
-Cards[22] = new Card("Ten of Spades", 10, "10_of_Spades.png");
-Cards[23] = new Card("Jack of Spades", 10, "jack_of_Spades.png");
-Cards[24] = new Card("Queen of Spades", 10, "queen_of_Spades.png");
-Cards[25] = new Card("King of Spades", 10, "king_of_Spades.png");
+Cards[13] = new Card("Ace of Spades", 1, "ace_of_spades.png");
+Cards[14] = new Card("Two of Spades", 2, "2_of_spades.png");
+Cards[15] = new Card("Three of Spades", 3, "3_of_spades.png");
+Cards[16] = new Card("Four of Spades", 4, "4_of_spades.png");
+Cards[17] = new Card("Five of Spades", 5, "5_of_spades.png");
+Cards[18] = new Card("Six of Spades", 6, "6_of_spades.png");
+Cards[19] = new Card("Seven of Spades", 7, "7_of_spades.png");
+Cards[20] = new Card("Eight of Spades", 8, "8_of_spades.png");
+Cards[21] = new Card("Nine of Spades", 9, "9_of_spades.png");
+Cards[22] = new Card("Ten of Spades", 10, "10_of_spades.png");
+Cards[23] = new Card("Jack of Spades", 10, "jack_of_spades.png");
+Cards[24] = new Card("Queen of Spades", 10, "queen_of_spades.png");
+Cards[25] = new Card("King of Spades", 10, "king_of_spades.png");
 
 // Hearts
 Cards[26] = new Card("Ace of Hearts", 1, "ace_of_hearts.png");
