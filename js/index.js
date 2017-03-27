@@ -1,6 +1,6 @@
 var today = new Date();
 var hourNow = today.getHours();
-var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var dateMessage = "Today is " + days[today.getDay()] + ", " + months[today.getMonth()] + ' ' + today.getDate();
 var greeting;
