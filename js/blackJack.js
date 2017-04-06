@@ -154,7 +154,7 @@ var dealerPlay = function(){
   $("#dealerComment").text("Dealer shows his second card...");
   dealerHand[dealerHand.length] = drawCard();
   displayHand(dealerHand);
-  while (getHandValue(dealerHand) < 17){
+  while (getHandValue(dealerHand) < getHandValue(playerHand)){
     $("#dealerComment").text("Dealer draws...");
     dealerHand[dealerHand.length] = drawCard();
     displayHand(dealerHand);

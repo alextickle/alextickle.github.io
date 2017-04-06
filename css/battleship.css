@@ -1,0 +1,13 @@
+.cell {
+  background-color: blue;
+  border: black solid 1px;
+  height: 50px;
+}
+
+.cell p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
