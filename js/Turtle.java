@@ -6,7 +6,7 @@ public class Turtle {
 	private boolean penUp = false;
 	private int[][] floor = new int[20][20];
 	private Direction direction = Direction.NORTH;
-	
+
 	public enum Direction{
 		NORTH(1), EAST(2), SOUTH(3), WEST(4);
 		private int value;
@@ -14,18 +14,18 @@ public class Turtle {
 		private Direction(int i){
 			this.value = i;
 		}
-		
+
 		public int getValue(){
 			return value;
 		}
 	}
-	
+
 	public Turtle(){
 		for (int[] i: floor){
 			Arrays.fill(i, 0);
 		}
 	}
-	
+
 
 	public static void main(String[] args) {
 		Turtle t = new Turtle();
@@ -34,12 +34,12 @@ public class Turtle {
 		String user;
 		int[][] tempFloor = new int[20][20];
 		while (!exit){
-			
+
 			System.out.println("Please enter a command: ");
 			user = input.nextLine();
-			
+
 			switch(Integer.parseInt(user)){
-				case 1: 
+				case 1:
 					t.setPenUp(true);
 					break;
 				case 2:
@@ -53,7 +53,7 @@ public class Turtle {
 						t.setDirection(t.getDirection() - 1);
 					}
 					break;
-					
+
 				case 4:
 					if (t.getDirection() == 4){
 						t.setDirection(1);
@@ -74,14 +74,14 @@ public class Turtle {
 								t.setFloor(tempFloor);
 								t.setTurtlePos(t.getTurtlePos()[0] - 4, t.getTurtlePos()[1]);
 							}
-							
+
 							else{
 								tempFloor[t.getTurtlePos()[0] - 4][t.getTurtlePos()[1]] = 2;
 								t.setFloor(tempFloor);
 								t.setTurtlePos(t.getTurtlePos()[0] - 4, t.getTurtlePos()[1]);
 							}
 							break;
-						case 2: 
+						case 2:
 							if (t.penUp){
 								tempFloor = t.getFloor();
 								for (int i = t.getTurtlePos()[1]; i < t.getTurtlePos()[1] - 5; i++){
@@ -91,7 +91,7 @@ public class Turtle {
 								t.setFloor(tempFloor);
 								t.setTurtlePos(t.getTurtlePos()[0], t.getTurtlePos()[1] - 4);
 							}
-							
+
 							else{
 								tempFloor[t.getTurtlePos()[0]][t.getTurtlePos()[1] - 4] = 2;
 								t.setFloor(tempFloor);
@@ -108,7 +108,7 @@ public class Turtle {
 								t.setFloor(tempFloor);
 								t.setTurtlePos(t.getTurtlePos()[0] + 4, t.getTurtlePos()[1]);
 							}
-							
+
 							else{
 								tempFloor[t.getTurtlePos()[0] + 4][t.getTurtlePos()[1]] = 2;
 								t.setFloor(tempFloor);
@@ -125,7 +125,7 @@ public class Turtle {
 								t.setFloor(tempFloor);
 								t.setTurtlePos(t.getTurtlePos()[0], t.getTurtlePos()[1] + 4);
 							}
-							
+
 							else{
 								tempFloor[t.getTurtlePos()[0]][t.getTurtlePos()[1] + 4] = 2;
 								t.setFloor(tempFloor);
@@ -144,21 +144,21 @@ public class Turtle {
 					exit = true;
 					break;
 			}
-			
+
 		}
-			
+
 	}
-	
+
 	public static void displayArray(int[][] twoDimensionalArray){
 		for (int row = 0; row < twoDimensionalArray.length; row++){
 			for (int col = 0; col <twoDimensionalArray[0].length; col++){
 				System.out.print(twoDimensionalArray[row][col] + " ");
 			}
 			System.out.println();
-			
+
 		}
 	}
-	
+
 	public static void printCommands(){
 		System.out.printf("%10s %10s\n", "Command", "Description");
 		System.out.printf("%10s %10s\n", "1", "Pen Up");
@@ -170,38 +170,38 @@ public class Turtle {
 		System.out.printf("%10s %10s\n", "7", "Print Commands");
 		System.out.printf("%10s %10s\n", "9", "End of Data");
 		System.out.println();
-		
+
 	}
-	
+
 	public boolean getPenUp(){
 		return penUp;
 	}
-	
+
 	public void setPenUp(boolean a){
 		this.penUp = a;
 	}
-	
+
 	public int[][] getFloor(){
 		return this.floor;
 	}
-	
+
 	public void setFloor(int [][] twoDimensionalArray){
 		this.floor = twoDimensionalArray;
 	}
-	
+
 	public int[] getTurtlePos(){
 		return this.turtlePos;
 	}
-	
+
 	public void setTurtlePos(int row, int col){
 		this.turtlePos[0] = row;
 		this.turtlePos[1] = col;
 	}
-	
+
 	public int getDirection(){
 		return this.direction.value;
 	}
-	
+
 	public void setDirection(int i){
 		switch(i){
 			case 1:
@@ -217,8 +217,9 @@ public class Turtle {
 				this.direction = Direction.WEST;
 				break;
 		}
-		
+
 	}
 
 }
 
+/

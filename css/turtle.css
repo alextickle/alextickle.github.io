@@ -1,0 +1,22 @@
+.cell {
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  border: solid black 1px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.turtle {
+  background-color: blue;
+}
+
+.drawn {
+  background-color: red;
+}
+
+h1 {
+  text-align: center;
+}
