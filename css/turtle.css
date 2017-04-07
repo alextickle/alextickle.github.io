@@ -20,3 +20,7 @@ table {
 h1 {
   text-align: center;
 }
+
+row td:eq(2) {
+  background-color: red;
+}
