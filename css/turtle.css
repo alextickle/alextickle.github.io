@@ -1,7 +1,6 @@
 .cell {
   height: 20px;
   width: 20px;
-  background-color: green;
   border: solid black 1px;
 }
 
@@ -9,18 +8,30 @@ table {
   border-collapse: collapse;
 }
 
+.test {
+  background-color: purple;
+}
+
+#myTable {
+  margin: auto;
+}
+
 .turtle {
-  background-color: blue;
+  background-color: green;
 }
 
 .drawn {
-  background-color: red;
+  background-color: black;
 }
 
 h1 {
   text-align: center;
 }
 
-row td:eq(2) {
-  background-color: red;
+#inputs {
+  float: right;
+}
+
+#commands {
+  float: left;
 }
