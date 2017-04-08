@@ -10,21 +10,21 @@ $(document).ready(function(){
   });
   $("#rainbow").click(function(){
     $("#albumCover").attr("src", "../media/" + albumCovers[2]);
-    $("#musicPlayer").attr("src", "../media/music/" + songs[1]);
-    document.getElementById("musicPlayer").load();
-  	document.getElementById("musicPlayer").play();
+    // $("#musicPlayer").attr("src", "../media/music/" + songs[1]);
+    // document.getElementById("musicPlayer").load();
+  	// document.getElementById("musicPlayer").play();
   });
   $("#inC").click(function(){
     $("#albumCover").attr("src", "../media/" + albumCovers[1]);
-    $("#musicPlayer").attr("src", "../media/music/" + songs[0]);
-    document.getElementById("musicPlayer").load();
-  	document.getElementById("musicPlayer").play();
+    // $("#musicPlayer").attr("src", "../media/music/" + songs[0]);
+    // // document.getElementById("musicPlayer").load();
+  	// // document.getElementById("musicPlayer").play();
   });
   $("#persian").click(function(){
     $("#albumCover").attr("src", "../media/" + albumCovers[0]);
-    $("#musicPlayer").attr("src", "../media/music/" + songs[2]);
-    document.getElementById("musicPlayer").load();
-  	document.getElementById("musicPlayer").play();
+    // $("#musicPlayer").attr("src", "../media/music/" + songs[2]);
+    // document.getElementById("musicPlayer").load();
+  	// document.getElementById("musicPlayer").play();
   });
 });
 
