@@ -2,6 +2,9 @@ $(document).ready(function(){
 	$("button").click(function(){
 		if (!gameOver){
 			playerChoice = $(this).attr("id");
+			$("#r").removeClass("unselected");
+			$("#p").removeClass("unselected");
+			$("#s").removeClass("unselected");
 			$("#" + selections[playerChoice]).addClass("playerSelected");
 			$("#" + selections[computerChoice]).addClass("computerSelected");
 			compare(images[playerChoice], images[computerChoice]);

@@ -2,6 +2,22 @@ li {
   color: white;
 }
 
+li:hover {
+  border: red solid 2px;
+  background-color: yellow;
+  color: red;
+  padding: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#albumCover {
+  margin-left: 70px;
+  margin-right: 20px;
+}
+
 #terryHeader {
   background-color: red;
   color: white;
@@ -9,19 +25,24 @@ li {
   border: solid yellow 3px;
 }
 
+#footer {
+  border: solid red 2px;
+  background-color: yellow;
+}
+
 #albums {
   text-align: center;
 }
 
-#rainbow {
+#rainbowHeader {
   border: solid green 3px;
 }
 
-#persian {
+#persianHeader {
   border: solid blue 3px;
 }
 
-#inC {
+#inCHeader {
   border: solid red 3px;
 }
 

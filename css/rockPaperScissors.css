@@ -3,6 +3,10 @@ img {
 	width: 200px;
 }
 
+.unselected:hover {
+	border: blue solid 4px;
+}
+
 h1, h5 {
 	text-align: center;
 }

@@ -5,10 +5,13 @@ body {
 h1 {
   text-align: center;
   font-family: 'Diplomata SC', cursive;
+  font-size: 40px;
 }
 
-h5 {
+h4 {
   text-align: center;
+  padding: 10px;
+  font-family: times;
 }
 
 #header {
