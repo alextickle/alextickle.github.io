@@ -1,0 +1,52 @@
+.cell {
+  height: 20px;
+  width: 20px;
+  border: solid black 1px;
+}
+
+#header {
+  background-color: blue;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#myTable {
+  margin: auto;
+}
+
+#commands {
+  border: solid black 2px;
+  background-color: #6dc066;
+  padding: 10px;
+}
+
+#commandTable thead th{
+  padding: 3px;
+}
+
+#commandTable tr * {
+  text-align: center;
+}
+
+#home {
+  text-align: right;
+}
+
+.test {
+  background-color: purple;
+}
+
+.turtle {
+  background-color: green;
+}
+
+.drawn {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+}

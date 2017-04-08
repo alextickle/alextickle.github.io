@@ -8,10 +8,19 @@ var initializeGrid = function(){
   $("#210").addClass("turtle");
 }
 
+var resetGrid = function(){
+  for (var i = 0; i <= 399; i++){
+    $("#" + i).removeClass("turtle");
+    $("#" + i).removeClass("drawn");
+  }
+  turtle.turtlePos = [10,10];
+  $("#210").addClass("turtle");
+}
+
 var createTurtle = function(){
   return {
     turtlePos: [10,10],
-    penUp: false,
+    penDown: false,
     direction: 0,
   }
 }
@@ -28,7 +37,7 @@ var processCmdList = function(string){
       return;
     }
   });
-
+  pastCommands.push($("#inputBox").val());
   $("#inputBox").val("");
 
 }
@@ -66,10 +75,10 @@ var validCommand = function(num){
 var processCommand = function(num){
 	switch(num){
 		case 1:
-			turtle.penUp = true;
+			turtle.penDown = true;
 			break;
 		case 2:
-			turtle.penUp = false;
+			turtle.penDown = false;
 			break;
 		case 3:
 			if (turtle.direction === 0){
@@ -90,7 +99,7 @@ var processCommand = function(num){
     case 5:
 			switch (turtle.direction){
 				case 0:
-					if (turtle.penUp){
+					if (turtle.penDown){
 						for (var i = 0; i <= 4; i++){
               $("#" + ((turtle.turtlePos[1] + i) * 20  + turtle.turtlePos[0])).addClass("drawn");
 						}
@@ -100,7 +109,7 @@ var processCommand = function(num){
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
 					break;
 				case 1:
-					if (turtle.penUp){
+					if (turtle.penDown){
 						for (var i = 0; i <= 4; i++){
               $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0] + i)).addClass("drawn");
 						}
@@ -109,7 +118,7 @@ var processCommand = function(num){
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
 					break;
 				case 2:
-          if (turtle.penUp){
+          if (turtle.penDown){
             for (var i = 0; i <= 4; i++){
               $("#" + ((turtle.turtlePos[1] - i) * 20 + turtle.turtlePos[0])).addClass("drawn");
             }
@@ -118,7 +127,7 @@ var processCommand = function(num){
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
 				break;
 				case 3:
-          if (turtle.penUp){
+          if (turtle.penDown){
             for (var i = 0; i <= 4; i++){
               $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0] - i)).addClass("drawn");
             }
@@ -132,7 +141,7 @@ var processCommand = function(num){
     case 6:
       switch (turtle.direction){
         case 0:
-          if (turtle.penUp){
+          if (turtle.penDown){
             $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
           }
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).removeClass("turtle");
@@ -140,21 +149,21 @@ var processCommand = function(num){
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
           break;
         case 1:
-          if (turtle.penUp){
+          if (turtle.penDown){
             $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
           }
           turtle.turtlePos = [turtle.turtlePos[0] + 1, turtle.turtlePos[1]];
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
           break;
         case 2:
-          if (turtle.penUp){
+          if (turtle.penDown){
             $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
           }
           turtle.turtlePos = [turtle.turtlePos[0], turtle.turtlePos[1] - 1];
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
         break;
         case 3:
-          if (turtle.penUp){
+          if (turtle.penDown){
             $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
           }
           $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).removeClass("turtle");
@@ -166,12 +175,26 @@ var processCommand = function(num){
 	}
 }
 
+var saveCommands = function(){
+  savedCommands.push(pastCommands.join(" | "));
+  $("#savedCommands").append('<p>' + savedCommands[savedCommands.length - 1] + '</p>');
+  pastCommands = [];
+}
+
 
 var turtle = createTurtle();
+var savedCommands = [];
+var pastCommands = [];
 
 $(document).ready(function(){
   initializeGrid();
   $("#input-btn").click(function(){
       processCmdList($("#inputBox").val());
+  });
+  $("#reset").click(function(){
+    resetGrid();
+  });
+  $("#save").click(function(){
+    saveCommands();
   });
 });
