@@ -44,26 +44,42 @@
               <td>6</td>
               <td>Advance 1 space</td>
             </tr>
-          </table>
+          </table><br>
+          <input type="button" id="examples" value="See Example"></input><br><br>
+          <div id="exampleBox">
+            <h4 id="exampleName"></h4>
+            <p id="example"></p>
+          </div>
         </div>
       </div>
       <div class="col-sm-6">
+        <br>
         <table id="myTable">
         </table>
       </div>
       <div class="col-sm-3">
-        <h4 id="instructions">Please enter a command (1-6):</h4>
-        <input type="text" id="inputBox"></input>
-        <input type="button" id="input-btn" value="Submit"></input>
-        <br><br><br>
-        <input type="button" id="reset" value="Reset"></input>
-        <input type="button" id="save" value="Save Commands"></input><br>
-        <div id="savedCommands"></divs>
+        <div id="inputs">
+          <h4 id="instructions">Enter a sequence of commands (1-6), separated by spaces:</h4>
+          <input type="text" id="inputBox"></input>
+          <input type="button" id="input-btn" value="Submit"></input><br><br>
+          <input type="button" id="reset" value="Reset"></input><br><br>
+          <div id="savedCommandsBox">
+            <div id="savedCommands"></divs>
+            </div>
+          </div><br>
+          <input type="button" id="save" value="Save Commands"></input>
+          <input type="button" id="clear" value="Clear"></input><br>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div id="home" class="col-sm-12">
+    <div id="footer" class="row">
+      <div class="col-sm-3">
+        <p>Source Code: <a href="turtleGraphics.html" download>HTML</a> | <a href="../css/turtleGraphics.css" download>CSS</a>
+          | <a href="../js/turtleGraphics.js" download>Javascript</a></p>
+      </div>
+      <div class="col-sm-8">
+      </div>
+      <div id="home" class="col-sm-1">
         <p><a href="../index.html">Home</a></p>
       </div>
     </div>

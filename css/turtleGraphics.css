@@ -5,19 +5,25 @@
 }
 
 #header {
-  background-color: blue;
+  background-color: green;
   color: white;
+  font-family: 'Lucida Console'; Monaco, monospace;
+}
+
+#instructions {
+  font-family: 'Lucida Console'; Monaco, monospace;
 }
 
 table {
   border-collapse: collapse;
+  font-family: 'Lucida Console'; Monaco, monospace;
 }
 
 #myTable {
   margin: auto;
 }
 
-#commands {
+#commands, #inputs {
   border: solid black 2px;
   background-color: #6dc066;
   padding: 10px;
@@ -39,8 +45,16 @@ table {
   background-color: purple;
 }
 
+#exampleBox, #savedCommandsBox {
+  height: 200px;
+  border: black solid 2px;
+  background-color: #faebd7;
+}
+
 .turtle {
   background-color: green;
+  /*background-size: 20px 20px;
+  background-image: url("../media/turtle.png");*/
 }
 
 .drawn {
@@ -49,4 +63,8 @@ table {
 
 h1 {
   text-align: center;
+}
+
+body {
+  background-color: #faebd7;
 }

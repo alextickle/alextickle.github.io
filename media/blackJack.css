@@ -1,0 +1,36 @@
+body {
+  background-color: crimson;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Diplomata SC', cursive;
+}
+
+h5 {
+  text-align: center;
+}
+
+#header {
+  height: 30px;
+  border: solid red 2px;
+  background-color: yellow;
+}
+
+#home {
+  text-align: right;
+}
+
+.inactive {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
+
+img {
+  height: 200px;
+  width: 100px;
+  border: yellow solid 2px;
+}

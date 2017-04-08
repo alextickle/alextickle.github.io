@@ -13,20 +13,22 @@ var resetGrid = function(){
     $("#" + i).removeClass("turtle");
     $("#" + i).removeClass("drawn");
   }
-  turtle.turtlePos = [10,10];
+  turtle.position = [10,10];
+  turtle.direction = 0;
+  turtle.penDown = false;
   $("#210").addClass("turtle");
 }
 
 var createTurtle = function(){
   return {
-    turtlePos: [10,10],
+    position: [10,10],
     penDown: false,
     direction: 0,
   }
 }
 
 var processCmdList = function(string){
-  $("#instructions").text("Please enter a command (1-6):");
+  $("#instructions").text("Enter a sequence of commands (1-6), separated by spaces:");
   var args = string.split(" ");
   args.forEach(function(command){
     if (validCommand(parseInt(command))){
@@ -46,25 +48,25 @@ var validCommand = function(num){
   if (num === 5){
     switch(turtle.direction){
       case 0:
-        return !(turtle.turtlePos[1] > 14);
+        return !(turtle.position[1] > 14);
       case 1:
-        return !(turtle.turtlePos[0] > 14);
+        return !(turtle.position[0] > 14);
       case 2:
-        return !(turtle.turtlePos[1] < 4);
+        return !(turtle.position[1] < 4);
       case 3:
-        return !(turtle.turtlePos[0] < 4);
+        return !(turtle.position[0] < 4);
     }
   }
   else if (num === 6){
     switch(turtle.direction){
       case 0:
-        return !(turtle.turtlePos[1] > 18);
+        return !(turtle.position[1] > 18);
       case 1:
-        return !(turtle.turtlePos[0] > 18);
+        return !(turtle.position[0] > 18);
       case 2:
-        return !(turtle.turtlePos[1] < 1);
+        return !(turtle.position[1] < 1);
       case 3:
-        return !(turtle.turtlePos[0] < 1);
+        return !(turtle.position[0] < 1);
     }
   }
   else {
@@ -78,6 +80,9 @@ var processCommand = function(num){
 			turtle.penDown = true;
 			break;
 		case 2:
+      if (turtle.penDown){
+        $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("drawn");
+      }
 			turtle.penDown = false;
 			break;
 		case 3:
@@ -97,44 +102,51 @@ var processCommand = function(num){
 			}
 			break;
     case 5:
+
 			switch (turtle.direction){
 				case 0:
 					if (turtle.penDown){
 						for (var i = 0; i <= 4; i++){
-              $("#" + ((turtle.turtlePos[1] + i) * 20  + turtle.turtlePos[0])).addClass("drawn");
+              $("#" + ((turtle.position[1] + i) * 20  + turtle.position[0])).addClass("drawn");
 						}
 					}
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).removeClass("turtle");
-          turtle.turtlePos = [turtle.turtlePos[0], turtle.turtlePos[1] + 5];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0], turtle.position[1] + 5];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
 					break;
 				case 1:
 					if (turtle.penDown){
 						for (var i = 0; i <= 4; i++){
-              $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0] + i)).addClass("drawn");
+              $("#" + (turtle.position[1] * 20 + turtle.position[0] + i)).addClass("drawn");
 						}
           }
-          turtle.turtlePos = [turtle.turtlePos[0] + 5, turtle.turtlePos[1]];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0] + 5, turtle.position[1]];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
 					break;
 				case 2:
           if (turtle.penDown){
             for (var i = 0; i <= 4; i++){
-              $("#" + ((turtle.turtlePos[1] - i) * 20 + turtle.turtlePos[0])).addClass("drawn");
+              $("#" + ((turtle.position[1] - i) * 20 + turtle.position[0])).addClass("drawn");
             }
           }
-          turtle.turtlePos = [turtle.turtlePos[0], turtle.turtlePos[1] - 5];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0], turtle.position[1] - 5];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
 				break;
 				case 3:
           if (turtle.penDown){
             for (var i = 0; i <= 4; i++){
-              $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0] - i)).addClass("drawn");
+              $("#" + (turtle.position[1] * 20 + turtle.position[0] - i)).addClass("drawn");
             }
           }
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).removeClass("turtle");
-          turtle.turtlePos = [turtle.turtlePos[0] - 5, turtle.turtlePos[1]];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0] - 5, turtle.position[1]];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
           break;
 			}
 			break;
@@ -142,33 +154,40 @@ var processCommand = function(num){
       switch (turtle.direction){
         case 0:
           if (turtle.penDown){
-            $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
+            $("#" + ((turtle.position[1]) * 20  + turtle.position[0])).addClass("drawn");
           }
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).removeClass("turtle");
-          turtle.turtlePos = [turtle.turtlePos[0], turtle.turtlePos[1] + 1];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0], turtle.position[1] + 1];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
           break;
         case 1:
           if (turtle.penDown){
-            $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
+            $("#" + ((turtle.position[1]) * 20  + turtle.position[0])).addClass("drawn");
           }
-          turtle.turtlePos = [turtle.turtlePos[0] + 1, turtle.turtlePos[1]];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0] + 1, turtle.position[1]];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
           break;
         case 2:
           if (turtle.penDown){
-            $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
+            $("#" + ((turtle.position[1]) * 20  + turtle.position[0])).addClass("drawn");
           }
-          turtle.turtlePos = [turtle.turtlePos[0], turtle.turtlePos[1] - 1];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0], turtle.position[1] - 1];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
         break;
         case 3:
           if (turtle.penDown){
-            $("#" + ((turtle.turtlePos[1]) * 20  + turtle.turtlePos[0])).addClass("drawn");
+            $("#" + ((turtle.position[1]) * 20  + turtle.position[0])).addClass("drawn");
           }
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).removeClass("turtle");
-          turtle.turtlePos = [turtle.turtlePos[0] - 1, turtle.turtlePos[1]];
-          $("#" + (turtle.turtlePos[1] * 20 + turtle.turtlePos[0])).addClass("turtle");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("turtle");
+          turtle.position = [turtle.position[0] - 1, turtle.position[1]];
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).removeClass("drawn");
+          $("#" + (turtle.position[1] * 20 + turtle.position[0])).addClass("turtle");
           break;
       }
       break;
@@ -181,10 +200,41 @@ var saveCommands = function(){
   pastCommands = [];
 }
 
+var showExample = function(){
+  resetGrid();
+  processCmdList(examples[exampleIndex].command);
+  $("#exampleName").text(examples[exampleIndex].name);
+  $("#example").text(examples[exampleIndex].command);
+  if (exampleIndex === examples.length - 1){
+    exampleIndex = 0;
+  }
+  else {
+    exampleIndex++;
+  }
+}
+
+var clearCommands = function(){
+  savedCommands = [];
+  pastCommands = [];
+  $("#savedCommands").empty();
+}
+
 
 var turtle = createTurtle();
 var savedCommands = [];
 var pastCommands = [];
+var examples = [
+  {
+    name: "SQUARE",
+    command: "4 5 1 3 5 3 5 5 3 5 5 3 5 5 3 5"
+  },
+
+  {
+    name: "HI",
+    command: "3 5 6 6 4 5 3 3 1 5 5 3 3 5 4 5 3 5 3 3 5 5 2 3 5 3 1 5 5"
+  }
+];
+var exampleIndex = 0;
 
 $(document).ready(function(){
   initializeGrid();
@@ -196,5 +246,11 @@ $(document).ready(function(){
   });
   $("#save").click(function(){
     saveCommands();
+  });
+  $("#examples").click(function(){
+    showExample();
+  });
+  $("#clear").click(function(){
+    clearCommands();
   });
 });
