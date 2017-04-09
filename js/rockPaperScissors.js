@@ -21,7 +21,7 @@ var computerChoice = Math.floor(Math.random() * 3);
 
 var compare = function(choice1, choice2){
     if (choice1 === choice2){
-        $("#summary").text("It's a tie!");
+        $("#summary").text("It's a tie! Computer also picked " + choice1 + ".");
 				gameOver = true;
     }
 
@@ -37,7 +37,7 @@ var compare = function(choice1, choice2){
 
     else if (choice1 === "paper"){
         if (choice2 === "rock"){
-            $("#summary").text("You win! Paper wins beats rock.");
+            $("#summary").text("You win! Paper beats rock.");
         }
         else {
             $("#summary").text("You lose! Scissors beats paper.");

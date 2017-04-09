@@ -2,13 +2,17 @@ body {
   background-color: crimson;
 }
 
-h1 {
+h3 {
   text-align: center;
   font-family: 'Diplomata SC', cursive;
   font-size: 40px;
 }
 
-h4 {
+#title {
+  height: 45px;
+}
+
+h5 {
   text-align: center;
   padding: 10px;
   font-family: times;

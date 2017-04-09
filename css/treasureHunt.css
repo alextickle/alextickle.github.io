@@ -12,6 +12,10 @@ td {
   text-align: center;
 }
 
+#audio {
+  visibility: hidden;
+}
+
 h2 {
   text-align: center;
   background-color: green;
