@@ -1,13 +1,6 @@
-#listOfPages {
-	background-color: crimson;
-	color: white;
-	border: yellow solid 2px;
-	text-align: left;
-}
-
- a {
+a {
 	 color: black;
- }
+}
 
  body {
 	 background-image: url("../media/olivier.jpg");
