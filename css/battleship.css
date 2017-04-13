@@ -1,13 +1,65 @@
-.cell {
-  background-color: blue;
+td{
+  height: 30px;
+  width: 30px;
   border: black solid 1px;
-  height: 50px;
+  background-color: blue;
 }
 
-.cell p {
+#header{
+  background-color: blue;
+  color: white;
   text-align: center;
+  font-family: 'Lucida Console'; Monaco, monospace;
 }
 
-h1 {
+table{
+  border-collapse: collapse;
+  margin: auto;
+}
+
+li {
+  font-family: 'Lucida Console'; Monaco, monospace;
+}
+
+.ship {
+  background-color: black;
+}
+
+#targetsHeader, #myRemainingShips {
   text-align: center;
+  color: white;
+  background-color: black;
+  font-family: 'Lucida Console'; Monaco, monospace;
+}
+
+#myShipsHeader, #targetShipsHeader{
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-family: 'Lucida Console'; Monaco, monospace;
+}
+
+.sunk {
+  color: red;
+  text-decoration: line-through;
+}
+
+.hit {
+  background-color: red;
+}
+
+.miss {
+  background-color: white;
+}
+
+#rightBox, #myBox{
+  background-color: #a3c1ad;
+  padding: 10px;
+  color: black;
+  height: 300px;
+  border: black solid 2px;
+}
+
+#audio {
+  visibility: hidden;
 }

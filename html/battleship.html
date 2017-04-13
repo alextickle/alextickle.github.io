@@ -1,377 +1,88 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Battleship</title>
-  <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css">
-  <link href="../css/battleship.css" type="text/css" rel="stylesheet"/>
-  <script src="../js/jquery-3.1.1.js"></script>
-  <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-  <script src="../js/battleship.js"></script>
-</head>
-<body>
-  <h1>Battleship</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-1">
+  <head>
+    <title>Battleship</title>
+    <link href="../css/battleship.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id="header">Battleship</h1>
+        </div>
       </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 id="targetShipsHeader">Enemy ships</h4>
+        </div>
       </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
+      <div class="row">
+        <div class="col-sm-3">
+          <div id="leftBox">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <table id="grid">
+          </table>
+        </div>
+        <div class="col-sm-3">
+          <div id="rightBox">
+            <p id="message"></p><br /><br />
+            <h5 id="targetsHeader">Enemy ships remaining</h5>
+            <ul>
+              <li id="Destroyer">Destroyer: Active</li>
+              <li id="Dingy">Dingy: Active</li>
+              <li id="Submarine">Submarine: Active</li>
+              <li id="Battleship">Battleship: Active</li>
+              <li id="Aircraft Carrier">Aircraft Carrier: Active</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 id="myShipsHeader">My ships</h4>
+        </div>
       </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+          <table id="myGrid">
+          </table>
+        </div>
+        <div class="col-sm-3">
+          <div id="myBox">
+            <p id="compMessage"></p><br /><br />
+            <h5 id="myRemainingShips">My remaining ships</h5>
+            <ul>
+              <li id="myDestroyer">Destroyer: Active</li>
+              <li id="myDingy">Dingy: Active</li>
+              <li id="mySubmarine">Submarine: Active</li>
+              <li id="myBattleship">Battleship: Active</li>
+              <li id="myAircraft Carrier">Aircraft Carrier: Active</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-1">
+    <div id="footer" class="row">
+      <div class="col-sm-3">
+        <p>Source Code: <a href="battleship.html" download>HTML</a> | <a href="../css/battleship.css" download>CSS</a>
+          | <a href="../js/battleship.js" download>Javascript</a></p>
       </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
+      <div class="col-sm-8">
       </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
+      <div id="home" class="col-sm-1">
+        <p><a href="../index.html">Home</a></p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1 cell">
-        <p>-</p>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-  </div>
-</body>
+    <audio id='audio' controls="controls">
+      <source id="musicPlayer" src="../media/effects/bomb.mp3" type="audio/mp3">
+    </audio>
+    <script src="../js/battleship.js" type="text/javascript"></script>
+  </body>
 </html>
