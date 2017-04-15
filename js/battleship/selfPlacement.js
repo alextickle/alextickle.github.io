@@ -4,7 +4,7 @@ var shipToPlace = {
   position: [],
   shipsPlaced: 0,
   directionList: ["north", "east", "south", "west"],
-  shipNames: ["Dingy", "Submarine", "Destroyer", "Battleship", "Aircraft Carrier"],
+  shipNames: ["Patrol Boat", "Submarine", "Destroyer", "Battleship", "Aircraft Carrier"],
   updateHighlightOnclicks: function(){
     if (this.shipsPlaced < 5){
       for (var i = 0; i < 10; i++) {

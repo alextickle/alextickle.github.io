@@ -48,7 +48,7 @@ function populateGridArray(value){
 function createShips(shipArray, board){
   var randomRow;
   var randomColumn;
-  var shipNames = ["Dingy", "Submarine", "Destroyer", "Battleship", "Aircraft Carrier"];
+  var shipNames = ["Patrol Boat", "Submarine", "Destroyer", "Battleship", "Aircraft Carrier"];
   var shipLengths = [2, 3, 3, 4, 5];
   var shipLocations = [];
   var testCase;
