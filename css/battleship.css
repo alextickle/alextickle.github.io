@@ -12,6 +12,7 @@ td{
   font-family: 'Lucida Console'; Monaco, monospace;
 }
 
+
 table{
   border-collapse: collapse;
   margin: auto;
@@ -21,8 +22,17 @@ li {
   font-family: 'Lucida Console'; Monaco, monospace;
 }
 
+.redFont {
+  color: red;
+  font-weight: bold;
+}
+
 .ship {
   background-color: black;
+}
+
+.redBorder {
+  border: red solid 5px;
 }
 
 #targetsHeader, #myRemainingShips {
@@ -37,6 +47,22 @@ li {
   color: white;
   background-color: black;
   font-family: 'Lucida Console'; Monaco, monospace;
+}
+
+button {
+  margin: auto;
+}
+
+.validPlacement {
+  background-color: yellow;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.invalidPlacement {
+  background-color: grey;
 }
 
 .sunk {
@@ -62,4 +88,24 @@ li {
 
 #audio {
   visibility: hidden;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: orange;
+}
+
+.three {
+  background-color: yellow;
+}
+
+.fourPlus {
+  background-color: purple;
+}
+
+.tenPlus {
+  background-color: green;
 }
