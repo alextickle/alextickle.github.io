@@ -341,7 +341,7 @@ function handleClick(cellLocation){
     disableOnClicks();
     document.getElementById("message").innerHTML = "You win!"
   }
-  if (clickValid){
+  if (clickValid && gameState.hits < 17){
     setTimeout(computerTakesTurn, 1000);
   }
 }
