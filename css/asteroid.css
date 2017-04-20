@@ -1,0 +1,41 @@
+table {
+  border: black solid 2px;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  height: 20px;
+  width: 20px;
+}
+
+.charged {
+  color: red;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.laser {
+  background-color: orange;
+}
+
+.asteroid {
+  background-color: gray;
+}
+
+.man {
+  background-color: blue;
+}
+
+.blank {
+  background-color: black;
+}
+
+#header {
+  text-align: center;
+  font-family: 'Lucida Console'; Monaco, monospace;
+}
+
+h4 {
+  text-align: center;
+}
