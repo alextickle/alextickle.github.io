@@ -117,9 +117,6 @@ function generateAsteroid(){
   state.gravity();
   state.grid[0][initialPosition] = "a";
   state.render();
-  if (laserCharge < 14){
-    laserCharge += 1;
-  }
 }
 
 function moveRight(){
@@ -225,6 +222,9 @@ $(document).keydown(function(e) {
 
 function incrementPoints(){
   points += 100 * (1 + state.level * .25);
+  if (laserCharge < 14){
+    laserCharge += 1;
+  }
 }
 
 function startPointCount(){
