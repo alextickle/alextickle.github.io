@@ -15,12 +15,29 @@ a:hover {
 	color: white;
 }
 
-h2 {
+#name {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 250px;
+	height: 150px;
+	width: 300px;
+	background-color: #ffffff;
+  #6bb120 solid 2px;
+  opacity: 0.6;
+}
+
+h4 {
 	text-align: center;
 }
 
+h1 {
+	padding-top: 15px;
+	text-align: center;
+	opacity: 1;
+}
+
 #footer {
-	margin-top: 550px;
+	margin-top: 175px;
 	border-top: #6bb120 solid 2px;
 	border-bottom: #6bb120 solid 2px;
 	background-color: #5588ff;
