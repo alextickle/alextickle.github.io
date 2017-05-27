@@ -4,6 +4,7 @@ a {
 
  body {
 	 background-image: url("../media/olivier.jpg");
+	 background-repeat: no-repeat;
  }
 
 .row {
@@ -19,7 +20,7 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 250px;
-	height: 150px;
+	height: 1500px;
 	width: 300px;
 	background-color: #ffffff;
   #6bb120 solid 2px;
