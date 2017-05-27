@@ -2,28 +2,44 @@ a {
 	 color: black;
 }
 
+#my-nav {
+	background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.nav-link-div {
+	display: inline;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.nav-link-divs {
+	margin: auto;
+	margin-top: 10px;
+	width: 700px;
+	height: 40px;
+}
+
  body {
 	 background-image: url("../media/SaintPaulGarden.jpg");
 	 background-repeat: no-repeat;
  }
-
-.row {
-	margin-top: 250px;
-}
 
 a:hover {
 	background-color: black;
 	color: white;
 }
 
+#name-row {
+	margin-top: 250px;
+}
+
 #name {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 250px;
 	height: 150px;
 	width: 300px;
 	background-color: #ffffff;
-  #6bb120 solid 2px;
   opacity: 0.6;
 }
 

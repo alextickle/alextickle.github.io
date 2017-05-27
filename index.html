@@ -2,27 +2,43 @@
 <html>
 <head>
   <title>Home</title>
-  <link href="css/index.css" type="text/css" rel="stylesheet"/>
   <script src="js/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="css/index.css" type="text/css" rel="stylesheet"/>
   <script src="js/index.js"></script>
 </head>
 <body>
-  <div id="name">
-    <h1>Alexander Tickle</h1>
-    <h4>Full stack web developer</h4>
-    <b><p><a href="https://github.com/alextickle" target="_blank">gitHub </a>|
-    <a href="https://www.linkedin.com/in/alexander-tickle/" target="_blank">LinkedIn </a></p></b>
+  <nav id="my-nav" class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top">
+    <div class="nav-link-divs">
+      <div class="nav-link-div">
+        <a class="nav-link" href="#">Projects</a>
+      </div>
+      <div class="nav-link-div">
+        <a class="nav-link" href="#">Work Experience</a>
+      </div>
+      <div class="nav-link-div">
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="name-row" class="row">
+      <div id="name">
+        <h1>Alexander Tickle</h1>
+        <h4>Full stack web developer</h4>
+        <b><p><a href="https://github.com/alextickle" target="_blank">gitHub </a>|
+        <a href="https://www.linkedin.com/in/alexander-tickle/" target="_blank">LinkedIn </a></p></b>
+      </div>
+    </div>
+    <div class="row">
+      <div id="footer">
+        <b><p><a href="html/asteroid.html" target="_blank">Asteroid </a>|
+        <a href="html/battleship.html" target="_blank">Battleship </a>|
+        <a href="html/blackJack.html" target="_blank">Black Jack </a>|
+        <a href="html/turtleGraphics.html" target="_blank">Turtle Graphics</a></p></b>
+      </div>
+    </div>
   </div>
-  <div id="footer">
-    <b><p><a href="html/asteroid.html" target="_blank">Asteroid </a>|
-    <a href="html/battleship.html" target="_blank">Battleship </a>|
-    <a href="html/blackJack.html" target="_blank">Black Jack </a>|
-    <a href="html/turtleGraphics.html" target="_blank">Turtle Graphics</a></p></b>
-  </div>
-  <!-- <div>
-    <audio id="musicPlayer" controls>
-      <source src="media/music/Novos Baianos - Acabou chorare.mp3" type="audio/mpeg">
-    </audio>
-  <div> -->
 </body>
 </html>
