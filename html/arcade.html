@@ -2,11 +2,54 @@
 <html>
   <head>
     <title>Arcade</title>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="../css/arcade.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
-    <h1>Arcade</h1>
-    <p><a href="../index.html">Home</a></p>
-    <p><a href="#" target="_blank">gitHub</a></p>
-    <p><a href="#" target="_blank">Launch App</a></p>
+    <nav id="my-nav" class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <div class="nav-link-divs">
+        <div class="nav-link-div">
+          <a class="nav-link" href="../index.html">Home</a>
+        </div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="#" target="_blank">gitHub</a>
+        </div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="#" target="_blank">Launch App</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="header-row" class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <h1>Arcade</h1>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Design Specification</h3>
+          <p>The program follows the Model View Controller framework, although the controller is very basic and does not currently do anything except pass along view requests to the model.</p>
+          <p>The view contains logic for handling user input and displaying data received from the model. Its implementation has been hidden from the model and controller components so that it could readily be swapped out for a different view if needed.</p>
+          <p>The MediaItem class defines fields and methods that are used by its child classes (CD, DVD, and Book). At the moment there is no significant difference between the three child classes, but perhaps in a future version of the program they could be updated with functionality that is specific to each media type.</p>
+          <p>The components communicate with each other by sending and editing Command objects, which are basically just MediaItems wrapped in objects so that can include info on the type of user request. The view handles user input and creates and appropriate Command object to pass to the controller, which in turn passes it to the Model. The model uses the Command object to update itself and then alerts the view that the update is complete. Then the view responds with a more specific request for data, which the model then exports to the view for display to the user.</p>
+          <p>The model stores all data in an ArrayList of Properties objects. It reads and writes data to a file (inventory.txt). If there is no data file in the current directory at runtime then the application creates a new one. In my submission files I’ve included an inventory.txt file that is prepopulated with data so that the application’s functionality can be more readily demonstrated. The inventory file is saved after each update to the model.</p>
+          <h3>Challenges</h3>
+          <p>The model stores all data in an ArrayList of Properties objects. It reads and writes data to a file (inventory.txt). If there is no data file in the current directory at runtime then the application creates a new one. In my submission files I’ve included an inventory.txt file that is prepopulated with data so that the application’s functionality can be more readily demonstrated. The inventory file is saved after each update to the model.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Text View</h3>
+          <img src="../media/screens/crud-text/15.PNG">
+          <h3>GUI View</h3>
+          <img src="../media/screens/crud-gui/09.PNG">
+        </div>
+      </div>
+    </div>
   </body>
 </html>
