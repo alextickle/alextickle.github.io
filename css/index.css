@@ -33,6 +33,7 @@ h1 {
 
 h2 {
 	text-align: center;
+  font-family: 'Crimson Text', serif;
 }
 
 h4 {
@@ -105,20 +106,36 @@ h4 {
 	height: 315px;
 }
 
+.edu-div, .work-div {
+  float: left;
+}
+
+.work-para {
+  clear: both;
+}
+
+.edu-image, .work-image {
+  height: 75px;
+  width: 75px;
+  float: right;
+}
+
 #edu-panel-1, #edu-panel-2, #edu-panel-3 {
-	margin-top: 10px;
+	margin: 5px;
 	background-color: #ffffff;
 	border: black solid 2px;
 	font-family: 'Crimson Text', serif;
+  width: 370px;
 	height: 175px;
 }
 
 #work-panel-1, #work-panel-2, #work-panel-3 {
-	margin-top: 10px;
+	margin: 10px;
 	background-color: #ffffff;
 	border: black solid 2px;
 	font-family: 'Crimson Text', serif;
-	height: 300px;
+	height: 305px;
+  width: 370px;
 }
 
 .icon-div {
