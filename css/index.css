@@ -97,10 +97,11 @@ h4 {
 	width: 70px;
 }
 
-#project-panel-1, #project-panel-2, #project-panel-3, #project-panel-4 {
+#project-panel-1, #project-panel-2, #project-panel-3, #project-panel-4, #project-panel-5, #project-panel-6 {
 	background-color: #ffffff;
 	border: black solid 2px;
 	margin: 5px;
+  width: 370px;
 	height: 315px;
 }
 
