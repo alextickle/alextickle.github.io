@@ -1,3 +1,3 @@
 # alextickle.github.io
 
-Homepage with links to browser implementations of battlehship, blackjack, turtle graphics, and asteroids.
+Static portfolio site with links to heroku apps.
