@@ -3,6 +3,7 @@
 <head>
   <title>Home</title>
   <script src="js/jquery-3.1.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Fjalla+One" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="css/index.css" type="text/css" rel="stylesheet"/>
@@ -12,56 +13,153 @@
   <nav id="my-nav" class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top">
     <div class="nav-link-divs">
       <div class="nav-link-div">
-        <a class="nav-link" href="#aboutme">About Me</a>
+        <a class="nav-link" href="#about-me-row">About Me</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#skills-row">Skills</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#projects-row">Projects</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#work">Work Experience and Education</a>
+        <a class="nav-link" href="#education-row">Education</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#work-row">Work Experience</a>
+      </div>
+      <div class="nav-link-div">
+        <a class="nav-link" href="#contact-row">Contact</a>
       </div>
     </div>
   </nav>
   <div class="container">
-    <div id="aboutme" class="row">
+    <div id="about-me-row" class="row">
       <div class="col-sm-4">
       </div>
-      <div id="name" class="col-sm-4">
+      <div id="about-me-div" class="col-sm-4">
         <h1>Alexander Tickle</h1>
         <h4>Full stack web developer</h4>
-        <img id="profpic" src='./media/profPic.png'>
-        <p id="aboutmetext">Analytical full stack web developer dedicated to building and optimizing creative web applications that provide intuitive user experiences. Strong background in project management. Previous professional experience in software localization and wildlife conservation.</p>
+        <img id="prof-pic" src='./media/profPic.png'>
+        <p id="about-me-text">Analytical full stack web developer dedicated to building and optimizing creative web applications that provide intuitive user experiences. Strong background in project management. Previous professional experience in software localization and wildlife conservation.</p>
       </div>
       <div class="col-sm-4">
       </div>
     </div>
-    <div id="skills" class="row">
-      <h1>Skills</h1>
+    <div id="skills-row" class="row">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-10">
+        <h1 id="langs-header">Languages</h1>
+        <div id="langs">
+          <div class="icon-div">
+            <img src="./media/icons/javascript-icon.png" class="icon">
+            <h3>Javascript</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/java-icon.png" class="icon">
+            <h3>Java</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/python-icon.jpg" class="icon">
+            <h3>Python</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/database.ico" class="icon">
+            <h3>SQL</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/css-icon.png" class="icon">
+            <h3>CSS</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/html.ico" class="icon">
+            <h3>HTML5</h3>
+          </div>
+        </div>
+        <h1 id="techs-header">Technologies</h1>
+        <div id="techs">
+          <div class="icon-div">
+            <img src="./media/icons/react.png" class="icon">
+            <h3>React</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/nodejs_icon.png" class="icon">
+            <h3>Express</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/jquery.png" class="icon">
+            <h3>jQuery</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/eclipse.ico" class="icon">
+            <h3>Eclipse</h3>
+          </div>
+          <div class="icon-div">
+            <img src="./media/icons/git.png" class="icon">
+            <h3>Git</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+      </div>
     </div>
-    <div id="projects" class="row">
-      <h1>Projects</h1>
+    <div id="projects-row" class="row">
+      <h1 id="projects-header">Projects</h1>
     </div>
-    <div id="work" class="row">
-      <h1>Work Experience and Education</h1>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-4" id="project-panel-1">
+        <a href="#"><h2>CrudApp</h2></a>
+        <img src="./media/screens/crud.png" class="project-image">
+        <p>Java CRUD application with MVC architecture.</p>
+      </div>
+      <div class="col-sm-4" id="project-panel-2">
+        <a href="#"><h2>Arcade</h2></a>
+        <img src="./media/screens/battleship.png" class="project-image">
+        <p>Browser implementations of Asteroid, Battleship, Black Jack, and Turtle Graphics.</p>
+      </div>
+      <div class="col-sm-2">
+      </div>
     </div>
-    <div id="contact" class="row">
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-4" id="project-panel-3">
+        <a href="#"><h2>Oregon Trail</h2></a>
+        <img src="./media/screens/oregontrail.png" class="project-image">
+        <p>'Oregon Trail' computer game implemented as an express web application.</p>
+      </div>
+      <div class="col-sm-4" id="project-panel-4">
+        <a href="#"><h2>Group Project</h2></a>
+        <img src="./media/screens/blank.png" class="project-image">
+        <p>In development</p>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <div id="education-row" class="row">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-10">
+        <h1>Education</h1>
+        <div class="edu-panel">
+        </div>
+        <div class="edu-panel">
+        </div>
+        <div class="edu-panel">
+        </div>
+      </div>
+      <div class="col-sm-1">
+      </div>
+    </div>
+    <div id="work-row" class="row">
+      <h1>Work Experience</h1>
+    </div>
+    <div id="contact-row" class="row">
       <h1>Contact</h1>
       <b><p><a href="https://github.com/alextickle" target="_blank">gitHub </a>|
       <a href="https://www.linkedin.com/in/alexander-tickle/" target="_blank">LinkedIn </a></p></b>
-    </div>
-    <div class="row">
-      <div id="footer">
-        <b><p><a href="html/asteroid.html" target="_blank">Asteroid </a>|
-        <a href="html/battleship.html" target="_blank">Battleship </a>|
-        <a href="html/blackJack.html" target="_blank">Black Jack </a>|
-        <a href="html/turtleGraphics.html" target="_blank">Turtle Graphics</a></p></b>
-      </div>
     </div>
   </div>
 </body>

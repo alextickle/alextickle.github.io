@@ -2,15 +2,100 @@ a {
 	 color: black;
 }
 
+#langs, #techs {
+	margin: auto;
+	margin-top: 20px;
+	height: 150px;
+}
+
+#projects-row {
+	margin-top: 70px;
+}
+
 #my-nav {
 	background-color: #ffffff;
   opacity: 0.6;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#skills-row {
+	margin-top: 40px;
+}
+
+.icon {
+	width: 100px;
+	height: 100px;
+}
+
+.project-image {
+	height: 200px;
+	width: 350px;
+}
+
+#project-panel-1, #project-panel-2, #project-panel-3, #project-panel-4 {
+	background-color: #ffffff;
+	border: black solid 2px;
+	margin: 10px;
+}
+
+.icon-div {
+	width: 150px;
+	height: 100px;
+	display: inline-block;
+}
+
+#projects-header {
+	margin: auto;
+	margin-top: 70px;
+	padding: 5px;
+	width: 200px;
+	background-color: #ffffff;
+	border: black solid 2px;
+}
+
+#langs-header {
+	margin: auto;
+	margin-top: 70px;
+	padding: 5px;
+	width: 200px;
+	background-color: #ffffff;
+	border: black solid 2px;
+}
+
+#techs-header {
+	margin: auto;
+	margin-top: 40px;
+	padding: 5px;
+	width: 200px;
+	background-color: #ffffff;
+	border: black solid 2px;
+}
+
+#skills-header {
+	margin: auto;
+	padding: 5px;
+	width: 100px;
+	background-color: #ffffff;
+	border: black solid 2px;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Crimson Text', serif;
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	background-color: #ffffff;
+	border: black solid 2px;
 }
 
 .nav-link-div {
 	display: inline;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 70px;
+	margin-right: 70px;
 }
 
 .nav-link-divs {
@@ -19,7 +104,7 @@ a {
 	height: 40px;
 }
 
-#profpic {
+#prof-pic {
 	width: 355px;
 	margin-left: 4px;
 	margin-right: 4px;
@@ -35,21 +120,24 @@ a:hover {
 	color: white;
 }
 
-#aboutme {
-	margin-top: 100px;
+#about-me-row {
+	margin-top: 65px;
 }
 
-#name {
+#about-me-div {
 	margin-top: 60px;
 	height: 500px;
 	background-color: #ffffff;
+	border: black solid 2px;
 }
 
 h4 {
+	font-family: 'Crimson Text', serif;
 	text-align: center;
 }
 
 h1 {
+	font-family: 'Fjalla One', sans-serif;
 	text-align: center;
 }
 
@@ -66,7 +154,7 @@ h1 {
 }
 
 p {
-	font-family: Times;
+	font-family: 'Crimson Text', serif;
 }
 
 #musicPlayer {
