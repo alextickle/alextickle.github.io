@@ -13,22 +13,22 @@
   <nav id="my-nav" class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top">
     <div class="nav-link-divs">
       <div class="nav-link-div">
-        <a class="nav-link" href="#about-me-row">About Me</a>
+        <a class="nav-link" id="about-me-link" href="#about-me-row">About Me</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#skills-row">Skills</a>
+        <a class="nav-link" id="skills-link" href="#skills-row">Skills</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#projects-row">Projects</a>
+        <a class="nav-link" id="projects-link" href="#projects-row">Projects</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#education-row">Education</a>
+        <a class="nav-link" id="education-link" href="#education-row">Education</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#work-row">Work Experience</a>
+        <a class="nav-link" id="work-link" href="#work-row">Work Experience</a>
       </div>
       <div class="nav-link-div">
-        <a class="nav-link" href="#contact-row">Contact</a>
+        <a class="nav-link" id="contact-link" href="#contact-row">Contact</a>
       </div>
     </div>
   </nav>
@@ -110,12 +110,12 @@
       <div class="col-sm-2">
       </div>
       <div class="col-sm-4" id="project-panel-1">
-        <a href="#"><h2>CrudApp</h2></a>
+        <h2><a href="#">CrudApp</a></h2>
         <img src="./media/screens/crud.png" class="project-image">
         <p>Java CRUD application with MVC architecture.</p>
       </div>
       <div class="col-sm-4" id="project-panel-2">
-        <a href="#"><h2>Arcade</h2></a>
+        <h2><a href="#">Arcade</a></h2>
         <img src="./media/screens/battleship.png" class="project-image">
         <p>Browser implementations of Asteroid, Battleship, Black Jack, and Turtle Graphics.</p>
       </div>
@@ -126,12 +126,12 @@
       <div class="col-sm-2">
       </div>
       <div class="col-sm-4" id="project-panel-3">
-        <a href="#"><h2>Oregon Trail</h2></a>
+        <h2><a href="#">Oregon Trail</a></h2>
         <img src="./media/screens/oregontrail.png" class="project-image">
         <p>'Oregon Trail' computer game implemented as an express web application.</p>
       </div>
       <div class="col-sm-4" id="project-panel-4">
-        <a href="#"><h2>Group Project</h2></a>
+        <h2><a href="#">Group Project</a></h2>
         <img src="./media/screens/blank.png" class="project-image">
         <p>In development</p>
       </div>
@@ -139,16 +139,32 @@
       </div>
     </div>
     <div id="education-row" class="row">
+      <h1 id="education-header">Education</h1>
+    </div>
+    <div class="row">
       <div class="col-sm-1">
       </div>
-      <div class="col-sm-10">
-        <h1>Education</h1>
-        <div class="edu-panel">
-        </div>
-        <div class="edu-panel">
-        </div>
-        <div class="edu-panel">
-        </div>
+      <div class="col-sm-3" id="edu-panel-1">
+        <h2>Learn Academy</h2>
+        <p>Javascript full stack Javascript web development boot camp – Node, Express, React, Postgres SQL</p>
+        <p>March 2017 – June 2017</p>
+        <p>San Diego, CA</p>
+      </div>
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-3" id="edu-panel-2">
+        <h2>UCSD Extension</h2>
+        <p>Java Certificate</p>
+        <p>July 2016 – August 2017</p>
+        <p>San Diego, CA</p>
+      </div>
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-3" id="edu-panel-3">
+        <h2>University of Pennsylvania</h2>
+        <p>Bachelor of Arts in Anthropology</p>
+        <p>2009 - 2013</p>
+        <p>Philadelphia, PA</p>
       </div>
       <div class="col-sm-1">
       </div>
@@ -156,11 +172,12 @@
     <div id="work-row" class="row">
       <h1>Work Experience</h1>
     </div>
-    <div id="contact-row" class="row">
-      <h1>Contact</h1>
-      <b><p><a href="https://github.com/alextickle" target="_blank">gitHub </a>|
-      <a href="https://www.linkedin.com/in/alexander-tickle/" target="_blank">LinkedIn </a></p></b>
-    </div>
-  </div>
+</div>
+<footer id="contact-row">
+  <h3 id="contact-header">Contact</h3>
+  <p id="github-link"><a href="https://github.com/alextickle" target="_blank">gitHub</a></p>
+  <p id="linkedin-link"><a href="https://www.linkedin.com/in/alexander-tickle/" target="_blank">LinkedIn</a></p>
+  <p id="email-link"><a href="mailto:alexander.tickle@gmail.com">Email</a></p>
+</footer>
 </body>
 </html>
