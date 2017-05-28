@@ -16,31 +16,33 @@ a {
 .nav-link-divs {
 	margin: auto;
 	margin-top: 10px;
-	width: 700px;
 	height: 40px;
 }
 
- body {
-	 background-image: url("../media/SaintPaulGarden.jpg");
-	 background-repeat: no-repeat;
- }
+#profpic {
+	width: 355px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+body {
+ background-image: url("../media/SaintPaulGarden.jpg");
+ background-repeat: no-repeat;
+}
 
 a:hover {
 	background-color: black;
 	color: white;
 }
 
-#name-row {
-	margin-top: 250px;
+#aboutme {
+	margin-top: 100px;
 }
 
 #name {
-	margin-left: auto;
-	margin-right: auto;
-	height: 150px;
-	width: 300px;
+	margin-top: 60px;
+	height: 500px;
 	background-color: #ffffff;
-  opacity: 0.6;
 }
 
 h4 {
@@ -48,9 +50,7 @@ h4 {
 }
 
 h1 {
-	padding-top: 15px;
 	text-align: center;
-	opacity: 1;
 }
 
 #footer {
@@ -61,8 +61,11 @@ h1 {
 	height: 35px;
 }
 
+#aboutmetext {
+	margin-top: 5px;
+}
+
 p {
-	text-align: center;
 	font-family: Times;
 }
 
