@@ -7,15 +7,16 @@ a:hover {
 	color: white;
 }
 
+.nav-link-div a:hover {
+	background-color: black;
+	color: white;
+}
+
 p {
 	font-family: 'Crimson Text', serif;
 }
 
 .nav-link-div a {
-  color: black;
-}
-
-p a {
   color: black;
 }
 
