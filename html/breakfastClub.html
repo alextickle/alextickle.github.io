@@ -18,7 +18,7 @@
           <a class="nav-link" href="https://github.com/kearobi/Breakfast-Club" target="_blank">gitHub</a>
         </div>
         <div class="nav-link-div">
-          <a class="nav-link" href="http://breakfastclub-demo.herokuapp.com/" target="_blank">Launch App</a>
+          <a class="nav-link" href="https://breakfast-club.herokuapp.com/" target="_blank">Launch App</a>
         </div>
       </div>
     </nav>
@@ -35,11 +35,9 @@
       <div class="row">
         <div class="col-sm-8">
           <h3>Design</h3>
-          <p>The application started as an in-class project for LEARN. It is based on the classic video game. For two days I worked in a team with five other students to implement the basic game logic and build a skeleton Express app. We used a single Game object to store game data and called instance methods to manipulate that data. In each Express route the game was loaded from a .json file, updated, and then saved.</p>
-          <p>After the two days of group work were up I began expanding the game on my own. We learned how to use Sequelize to interface with a Postgres database, and so I rewrote the app to load and save data into a database instead of a .json. This initially seemed to be pretty minor change but in the end most of the game logic had to be rewritten to deal with Sequelize Instance objects instead of the original Game object.</p>
-          <p>I also reused code from an Asteroids game that I had already written in order to provide an implementation of the hunting option in the original Oregon Trail. My Asteroid implementation made heavy use of timeouts to randomly generate and move objects across a grid. It occured to me that the same basic principle could be used in the hunting game, and so I was able to quickly modify the original code to meet this new purpose.</p>
+          <p>'Breakfast Club' was team Empty String's final group project. It is a React application with an Express and Postgres SQL backend. My classmates and I had been meeting for breakfast every Friday at different restaurants in the downtown area, and so we decided to build a web app that would organize breakfast meetups. At the moment there is a single group that anybody can join. Every week users can vote on one of two randomly generated restaurants pulled from the database, which is updated weekly by pinging the Yelp API. When logged in a user can view relevant info about each choice, vote, rsvp, and send view a list of attendees. There is also a message board where changes can be suggested as well as a protected admin route whereby the admin can make necessary changes to the upcoming event.</p>
           <h3>Challenges</h3>
-          <p>Getting comfortable with the Sequelize ORM took a lot of effort, mostly because most of the methods are asynchronous and return Promises. This is of course a significant conceptual departure from writing synchronous programs, and so I initially struggled with nesting multiple asynchronous function one inside the other. It ended up being very valuable practice. It occured to me that the game might work well with React on the frontend, and so I may end up doing some more refactoring in the near future.</p>
+          <p>The single greatest challenge posed by this project was the difficulty of merging </p>
         </div>
         <div class="col-sm-4">
           <h3>Hunt Gameplay</h3>
