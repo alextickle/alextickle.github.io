@@ -20,6 +20,11 @@ p {
   color: black;
 }
 
+p a {
+  color: black;
+}
+
+
 a {
 	color: white;
 	padding-left: 20px;
