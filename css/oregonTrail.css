@@ -1,0 +1,42 @@
+img {
+  height: 350px;
+}
+
+a {
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+a:hover {
+	background-color: black;
+	color: white;
+}
+
+.nav-link-div {
+	display: inline;
+	margin-left: 70px;
+	margin-right: 70px;
+  margin-bottom: 0px;
+}
+
+.nav-link-divs {
+	margin: auto;
+	margin-top: 10px;
+	height: 40px;
+}
+
+h1, h3 {
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+}
+
+#my-nav {
+	background-color: #ffffff;
+  opacity: 0.6;
+	font-family: 'Fjalla One', sans-serif;
+}
