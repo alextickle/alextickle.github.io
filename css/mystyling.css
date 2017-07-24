@@ -1,12 +1,3 @@
-#pennHeader {
-  height: 70px;
-  width: 230px;
-}
-
-#ucsdHeader {
-  width: 400px;
-}
-
 #no-vertical-margin {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -45,10 +36,6 @@
   margin-bottom: 0px;
 }
 
-.portfolio-thumbnail {
-  height: 264px;
-  width: 360px;
-}
 
 .float-right {
   float: right;
@@ -60,33 +47,5 @@
 }
 
 #prof-logo {
-  height: 58px;
   border-radius: 50%;
-}
-
-#linkedin-icon {
-  height: 40px;
-}
-
-.project-img {
-  width: 525px;
-}
-
-#lc {
-  width: 70%;
-  margin-left: 10%;
-}
-
-#mjd {
-  width: 70%;
-  height: 70%;
-  margin-left: 10%;
-  margin-top: 20%;
-}
-
-#mp {
-  width: 70%;
-  height: 70%;
-  margin-left: 10%;
-  margin-top: 20%;
 }
