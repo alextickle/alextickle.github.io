@@ -50,11 +50,16 @@
   border-radius: 50%;
 }
 
+/*#banner-info {
+  border-radius: 15%;
+}*/
+
 
 @media only screen and (max-width: 500px) {
     #banner-info {
         background-color: white;
-        padding-top: 15px;
+        padding-top: 35px;
+        padding-left: 35px;
     }
     #prof-logo {
       height: 40px;
