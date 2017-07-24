@@ -54,5 +54,6 @@
 @media only screen and (max-width: 500px) {
     #banner-info {
         background-color: white;
+        padding-top: 15px;
     }
 }
