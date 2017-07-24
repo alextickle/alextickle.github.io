@@ -49,3 +49,10 @@
 #prof-logo {
   border-radius: 50%;
 }
+
+
+@media only screen and (max-width: 500px) {
+    #banner-info {
+        background-color: white;
+    }
+}
