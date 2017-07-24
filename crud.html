@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Theme Region">
+        <meta name="description" content="">
+
+        <title>Arcade</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/mystyling.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Sacramento" rel="stylesheet">
+
+        <!-- icons -->
+        <link rel="icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        <div class="main-wrapper home-two">
+            <div class="container">
+                <div id="navigation" class="menu-two">
+                     <div class="navbar">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                             <div class="navbar-brand logo">
+                                <a href="index.html"><img id="prof-logo" class="img-responsive" src="images/prof-logo.png" alt="Image" ></a>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <nav id="mainmenu">
+                                <ul class="nav navbar-nav">
+                                    <li class=" dropdown">
+                                        <a href="index.html#home-banner">Home</a>
+                                    </li>
+                                    <li><a href="index.html#about">About Me</a></li>
+                                     <li><a href="index.html#skill">Skills</a></li>
+                                     <li><a href="index.html#experience">Experience</a></li>
+                                     <li><a href="index.html#education">Education</a></li>
+                                     <li><a href="index.html#portfolio">Projects</a></li>
+                                     <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div><!-- navbar -->
+                </div><!-- navigation -->
+            </div><!-- container -->
+
+
+
+            <div id="blog" class="blog-section section-padding">
+                <div class="container">
+                  <div id="header-row" class="row">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-4">
+                      <h1>Java CRUD</h1>
+                      <a href="https://github.com/alextickle/arcade" target="_blank"><h7>gitHub |</h7></a>
+                      <a href="./awthw2.jar" download><h7>Download .jar file</h7></a>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <h3>Design</h3>
+                      <p>This application was an assignment for UCSD Extension's Java Programming III class (Intermediate Java Programming, CSE-40481). The goal of the assignment was to build a CRUD (Create, Retrieve, Update, Delete) inventory management program for a 'Borders'-style retailer using Model View Controller (MVC) architecture.</p>
+                      <p>The view contains logic for handling user input and displaying data received from the model. Its implementation has been hidden from the model and controller components so that it could readily be swapped out for a different view as long as the new view implements the Viewable interface. The initial view was text-based and all input was taken from the command line. I built a GUI view for the second part of the assignment using the Swing library.</p>
+                      <p>The MediaItem class defines fields and methods that are used by its child classes (CD, DVD, and Book). The components communicate with each other by sending and editing Command objects, which are basically just MediaItems wrapped in objects so that can include info on the type of user request. The view handles user input and creates and appropriate Command object to pass to the controller, which in turn passes it to the Model. The model uses the Command object to update itself and then alerts the view that the update is complete. Then the view responds with a more specific request for data, which the model then exports to the view for display to the user.</p>
+                      <p>The initial model stored all data in an ArrayList of Properties objects. It reads and writes data to a local text file (inventory.txt). If there is no data file in the current directory at runtime then the application creates a new one. The gitHub repository and included .jar file contain an inventory.txt file that is prepopulated with data so that the application’s functionality can be more readily demonstrated. The inventory file is saved after each update to the model. A second model that makes use of a database via JDBC was built for the third step of the assignment</p>
+                      <h3>Challenges</h3>
+                      <p>Working on this project clearly instilled upon me the advantage of developing a solid high-level plan for how the program will work before writing a single line of code. Luckily this advantage became apparent fairly early on in the process, and once I had a clear plan implementing the individual component methods became much simpler. Before writing this program I had minimal experience with the filesystem libraries and so it took a lot of experimenting to develop a working persistance layer. The GUI turned out to be pretty straightforward, although all of the logic of the text-based view had to be completely rewritten to accomodate event-handling.</p>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3>Text View</h3>
+                      <img class="project-img" src="./images/portfolio/crud/gui.png">
+                      <h3>GUI View</h3>
+                      <img class="project-img" src="./images/portfolio/crud/text.png">
+                    </div>
+                  </div>
+                </div><!-- container -->
+            </div><!-- blog section -->
+
+            <div id="footer">
+                <div class="container text-center">
+                    <div class="footer">
+                        <p> &copy; 2017 <a href="#">Alexander Tickle.</a> All Rights Reserved</p>
+                    </div>
+                </div><!-- contaner -->
+            </div><!-- footer -->
+        </div><!-- main wrapper -->
+
+       <!-- JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/counterup.min.js"></script>
+        <script src="js/inview.min.js"></script>
+        <script src="js/easypiechart.js"></script>
+        <script src="js/magnific-popup.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,243 +1,544 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Home</title>
-  <link rel="icon" href="favicon.ico"/>
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Fjalla+One" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="css/index.css" type="text/css" rel="stylesheet"/>
-  <script src="js/jquery-3.1.1.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
-</head>
-<body>
-  <nav id="my-nav" class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top">
-    <div class="nav-link-divs">
-      <div class="nav-link-div">
-        <a class="nav-link" id="about-me-link" href="#about-me-row">About Me</a>
-      </div>
-      <div class="nav-link-div">
-        <a class="nav-link" id="skills-link" href="#skills-row">Skills</a>
-      </div>
-      <div class="nav-link-div">
-        <a class="nav-link" id="projects-link" href="#projects-row">Projects</a>
-      </div>
-      <div class="nav-link-div">
-        <a class="nav-link" id="education-link" href="#education-row">Education</a>
-      </div>
-      <div class="nav-link-div">
-        <a class="nav-link" id="work-link" href="#work-header">Work Experience</a>
-      </div>
-      <div class="nav-link-div">
-        <a class="nav-link" id="contact-link" href="#contact-row">Contact</a>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <div id="about-me-row" class="row">
-      <div class="col-sm-4">
-      </div>
-      <div id="about-me-div" class="col-sm-4">
-        <h1>Alexander Tickle</h1>
-        <h4>Full stack web developer</h4>
-        <img id="prof-pic" src='./media/profPic.png'>
-        <p id="about-me-text">Full stack web developer with analytical skills dedicated to building and optimizing creative web applications that provide intuitive user experiences. Strong background in project management from previous professional experience in wildlife conservation and software localization.</p>
-      </div>
-      <div class="col-sm-4">
-      </div>
-    </div>
-    <div id="skills-row" class="row">
-      <div class="col-sm-1">
-      </div>
-      <div class="col-sm-10">
-        <h1 id="langs-header">Languages</h1>
-        <div id="langs">
-          <div class="icon-div">
-            <img src="./media/icons/javascript-icon.png" class="icon">
-            <h3>Javascript</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/java-icon.png" class="icon">
-            <h3>Java</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/python-icon.jpg" class="icon">
-            <h3>Python</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/database.ico" class="icon">
-            <h3>SQL</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/css-icon.png" class="icon">
-            <h3>CSS</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/html.ico" class="icon">
-            <h3>HTML5</h3>
-          </div>
-        </div>
-        <h1 id="techs-header">Technologies</h1>
-        <div id="techs">
-          <div class="icon-div">
-            <img src="./media/icons/react.png" class="icon">
-            <h3>React</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/nodejs_icon.png" class="icon">
-            <h3>Express</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/jquery.png" class="icon">
-            <h3>jQuery</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/eclipse.ico" class="icon">
-            <h3>Eclipse</h3>
-          </div>
-          <div class="icon-div">
-            <img src="./media/icons/git.png" class="icon">
-            <h3>Git</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-1">
-      </div>
-    </div>
-    <div id="projects-row" class="row">
-      <h1 id="projects-header">Projects</h1>
-    </div>
-    <div class="row">
-      <div class="col-sm-4" id="project-panel-1">
-        <h2><a href="./html/arcade.html">Arcade</a></h2>
-        <img src="./media/screens/index/arcade.PNG" class="project-image">
-        <p>SPA implementations of Asteroid, Battleship, Black Jack, and Turtle Graphics.</p>
-        <p>Stack: Node, Express, jQuery, HTML, CSS</p>
-      </div>
-      <div class="col-sm-4" id="project-panel-2">
-        <h2><a href="./html/oregonTrail.html">Oregon Trail</a></h2>
-        <img src="./media/screens/index/oregontrail.PNG" class="project-image">
-        <p>'Oregon Trail' computer game implemented as an Express web application.</p>
-        <p>Stack: Node, Express, Postgres SQL, HTML, CSS</p>
-      </div>
-      <div class="col-sm-4" id="project-panel-3">
-        <h2><a href="./html/crudApp.html">CrudApp</a></h2>
-        <img src="./media/screens/index/crud.PNG" class="project-image">
-        <p>Java CRUD application with MVC architecture.</p>
-        <p>Stack: Java, Eclipse, Swing</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4" id="project-panel-4">
-        <!-- <h2><a href="./html/groupProject.html">React Project</a></h2>
-        <img src="./media/screens/index/blank.PNG" class="project-image">
-        <p>In development</p> -->
-      </div>
-      <div class="col-sm-4" id="project-panel-5">
-        <h2><a href="#">Breakfast Club</a></h2>
-        <img src="./media/screens/index/splash.PNG" class="project-image">
-        <p>React app that allows users to organize a weekly breakfast meetup. Makes use of the Yelp API. Group project for LEARN Academy. Still in development</p>
-        <p>Stack: Node, Express, Postgres SQL, React, HTML, CSS</p>
-      </div>
-      <!-- <div class="col-sm-4" id="project-panel-6">
-        <h2><a href="./html/groupProject.html">Second React Project</a></h2>
-        <img src="./media/screens/index/blank.PNG" class="project-image">
-        <p>In development</p>
-      </div> -->
-    </div>
-    <div id="education-row" class="row">
-      <h1 id="education-header">Education</h1>
-    </div>
-    <div class="row">
-      <div class="col-sm-4" id="edu-panel-1">
-        <h2><a href="https://www.learnacademy.org/curriculum?learn_class=9" target="_blank">Learn Academy</a></h2>
-        <div class="edu-div">
-          <p>Node, Express, React, Postgres SQL</p>
-          <p>March 2017 – June 2017</p>
-          <p>San Diego, CA</p>
-        </div>
-        <img class="edu-image" src="./media/icons/learn.png">
-      </div>
-      <div class="col-sm-4" id="edu-panel-2">
-        <h2><a href="https://extension.ucsd.edu/courses-and-programs/java-programming" target="_blank">UCSD Extension</a></h2>
-        <div class="edu-div">
-          <p>Java Certificate</p>
-          <p>July 2016 – August 2017</p>
-          <p>San Diego, CA</p>
-        </div>
-        <img class="edu-image" src="./media/icons/ucsd.jpg">
-      </div>
-      <div class="col-sm-4" id="edu-panel-3">
-        <h3><a href="http://www.upenn.edu/" target="_blank">University of Pennsylvania</a></h2>
-        <div class="edu-div">
-          <p>Bachelor of Arts in Anthropology</p>
-          <p>2009 - 2013</p>
-          <p>Philadelphia, PA</p>
-        </div>
-        <img class="edu-image" src="./media/icons/penn.gif">
-      </div>
-    </div>
-    <div id="work-row" class="row">
-      <h1 id="work-header">Work Experience</h1>
-    </div>
-    <div class="row">
-      <div class="col-sm-4" id="work-panel-1">
-        <h2>MJD Interactive</h2>
-        <div class="work-div">
-          <p>Web Developer Intern</p>
-          <p>San Diego, CA</p>
-          <p>June 2017 – </p>
-        </div>
-        <img class="work-image" src="./media/icons/mjd.jpg">
-        <p class="work-para">Implemented new features and performed testing/QA on client React application</p>
-        <p class="work-para">Introduced to Pivotal Tracker and agile workflow</p>
-      </div>
-      <div class="col-sm-4" id="work-panel-2">
-        <h2>CETRA Language Solutions</h2>
-        <div class="work-div">
-          <p>Project Manager</p>
-          <p>San Diego, CA</p>
-          <p>April 2016 – March 2017</p>
-        </div>
-        <img class="work-image" src="./media/icons/cetra.png">
-        <p class="work-para">Managed translation projects from client handoff to final delivery for market research firms</p>
-        <p class="work-para">Prepared XML survey files for translation by linguists with extensive use of Beyond Compare</p>
-      </div>
-      <div class="col-sm-4" id="work-panel-3">
-        <h2>Local Concept</h2>
-        <div class="work-div">
-          <p>Project Coordinator</p>
-          <p>San Diego, CA</p>
-          <p>June 2015 – March 2016</p>
-        </div>
-        <img class="work-image" src="./media/icons/lc.png">
-        <p class="work-para">Coordinated localization projects of all types (software, user guide documentation, instructional posters, packaging, etc) for Hewlett-Packard, one of Local Concept’s largest clients</p>
-        <p class="work-para">Received extensive training in the use of SDL Trados and HP’s proprietary Enterprise Translation Management Architecture (ETMA) to prepare source files for assignment to translators</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-      </div>
-      <div class="col-sm-4" id="work-panel-4">
-        <h2><a href="http://panafrican.eva.mpg.de/" target="_blank">Max Planck Institute</a></h2>
-        <div class="work-div">
-          <p>Field Site Manager</p>
-          <p>Leipzig, Germany / GEPRENAF, Cote d'Ivoire</p>
-          <p>August 2013 – December 2015</p>
-        </div>
-        <img class="work-image" src="./media/icons/mpi.gif">
-        <p class="work-para">Managed temporary field site for chimpanzee research in GEPRENAF zone of northern Côte d’Ivoire as part of MPI-EVA’s Pan African Program (comparative study of chimpanzees at 30+ field sites across Africa)</p>
-        <p class="work-para">Extensive use of handheld GPS, GIS software, and Excel</p>
-      </div>
-      <div class="col-sm-4">
-      </div>
-    </div>
-</div>
-<footer id="contact-row">
-  <h3 id="contact-header">Contact</h3>
-  <p id="github-link"><a href="https://github.com/alextickle" target="_blank">gitHub</a></p>
-  <p id="linkedin-link"><a href="https://www.linkedin.com/in/alexander-tickle/" target="_blank">LinkedIn</a></p>
-  <p id="email-link"><a href="mailto:alexander.tickle@gmail.com">Email</a></p>
-</footer>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Theme Region">
+        <meta name="description" content="">
+
+        <title>Alexander Tickle</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/mystyling.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Sacramento" rel="stylesheet">
+
+        <!-- icons -->
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="main-wrapper home-two">
+            <div id="home-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="banner-content">
+                                <div class="banner-info">
+                                    <h2>Alexander Tickle</h2>
+                                    <h3>Web Developer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- home-banner -->
+
+            <div class="container">
+                <div id="navigation" class="menu-two">
+                    <div class="navbar">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                             <div class="navbar-brand logo">
+                                <a href="index.html"><img id="prof-logo" class="img-responsive" src="images/prof-logo.png" alt="Image" ></a>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <nav id="mainmenu">
+                                <ul class="nav navbar-nav">
+                                    <li class=" scroll current"><a href="#home-banner">Home</a></li>
+                                    <li class="scroll"><a href="#about">About Me</a></li>
+                                     <li class="scroll"><a href="#skill">Skills</a></li>
+                                     <li class="scroll"><a href="#experience">Experience</a></li>
+                                     <li class="scroll"><a href="#education">Education</a></li>
+                                     <li class="scroll"><a href="#portfolio">Projects</a></li>
+                                     <li class="scroll"><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div><!-- navbar -->
+                </div><!-- navigation -->
+            </div><!-- container -->
+
+            <div id="about" class="about-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="section-title">
+                                <h1>About Me</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="about-info">
+                                <p>Full stack web developer with analytical skills dedicated to building and optimizing creative web applications that provide intuitive user experiences. Strong background in project management from previous professional experience in wildlife conservation and software localization.</p>
+                            </div>
+                            <address>
+                                <p><span>Email:</span> alexander.tickle@gmail.com</p>
+                                <p><span>Phone:</span> (619)-736-1039</p>
+                            </address>
+                            <a href="cv.pdf" class="btn btn-primary" download>
+                              <div class="button">
+                                  Download my resume as a .pdf file
+                              </div>
+                            </a>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- about section -->
+
+            <div id="skill" class="skill-section bg-color section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="section-title">
+                                <h1>Skills</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="section-content">
+                                <div class="text-info">
+                                    <h4>Programming languages</h4>
+                                    <p>I feel most comfortable programming in Javascript and Java, but I have also spent significant time completing textbook exercises in Python. Examples of my work in all three can be found on my gitHub account.</p>
+                                </div>
+                                <div class="progress-content">
+                                    <div class="rating-bar bar-left">
+                                        <label>Javascript</label>
+                                        <span class="rating-count pull-right">90%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>Java</label>
+                                        <span class="rating-count pull-right">80%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>Python</label>
+                                        <span class="rating-count pull-right">50%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar4" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill rating-bar bar-right">
+                                        <label>HTML5</label>
+                                        <span class="rating-count pull-right">80%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>CSS</label>
+                                        <span class="rating-count pull-right">70%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>SQL</label>
+                                        <span class="rating-count pull-right">60%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar5" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="section-content">
+                                <div class="text-info">
+                                    <h4>Technologies</h4>
+                                    <p>I'm always looking to expand my toolkit. Here are some of the tools/frameworks/libraries that I have the most experience with:</p>
+                                </div>
+                                <div class="progress-content">
+                                    <div class="rating-bar bar-left">
+                                        <label>React</label>
+                                        <span class="rating-count pull-right">80%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>Express</label>
+                                        <span class="rating-count pull-right">80%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>jQuery</label>
+                                        <span class="rating-count pull-right">70%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill rating-bar bar-right">
+                                        <label>Git</label>
+                                        <span class="rating-count pull-right">90%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>Eclipse</label>
+                                        <span class="rating-count pull-right">70%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar4" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>Postman</label>
+                                        <span class="rating-count pull-right">50%</span>
+                                        <div class="skill-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bar5" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- skill section -->
+
+            <div id="experience" class="experience-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="section-title">
+                                <h1>Experience</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="text-info">
+                                <p>I've recently made a career change from the language services industry, and now I'm looking for San Diego opportunities as a full stack web developer.</p>
+                            </div>
+                            <div class="experience">
+                                <div class="experience-image">
+                                    <img class="img-responsive" src="images/experience/mjd-interactive.png" alt="Image">
+                                </div>
+                                <div class="experience-info">
+                                    <h3>Web Development Intern</h3>
+                                    <h5>MJD Interactive | June 2017 - Present</h5>
+                                    <div class="col-sm-8">
+                                      <p>- Implemented new features and performed testing/QA on client React application</p>
+                                      <p>- 25 pull requests merged into master</p>
+                                      <p>- Added browser support for 6 browser/device combinations</p>
+                                      <p>- Extensive use of Pivotal Tracker, an agile project management platform</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="experience">
+                                <div class="experience-image">
+                                    <img class="img-responsive" src="images/experience/cetra.png" alt="Image">
+                                </div>
+                                <div class="experience-info">
+                                    <h3>Project Manager</h3>
+                                    <h5>CETRA Language Solutions | April 2016 - March 2017</h5>
+                                    <div class="col-sm-8">
+                                      <p>- Managed translation projects from client handoff to final delivery for market research firms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="experience">
+                                <div class="experience-image">
+                                    <img id="lc" class="img-responsive" src="images/experience/lc.png" alt="Image">
+                                </div>
+                                <div class="experience-info">
+                                    <h3>Project Coordinator</h3>
+                                    <h5>Local Concept | June 2015 - March 2016</h5>
+                                    <div class="col-sm-8">
+                                      <p>- Coordinated localization projects of all types (software, user guide documentation, instructional posters, packaging, etc) for Hewlett-Packard, one of Local Concept’s largest clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="experience">
+                                <div class="experience-image">
+                                    <img id="mp" class="img-responsive" src="images/experience/maxplanck.png" alt="Image">
+                                </div>
+                                <div class="experience-info">
+                                    <h3>Field Site Manager</h3>
+                                    <h5>Max Planck Institute (MPI-EVA) | August 2013 - December 2014</h5>
+                                    <div class="col-sm-8">
+                                      <p>- Managed temporary field site for chimpanzee research in GEPRENAF zone of northern Côte d’Ivoire as part of MPI-EVA’s Pan African Program (comparative study of chimpanzees at 30+ field sites across Africa)</p>
+                                      <p>- Responsible for all data collection, logistics, team management, and accounting for entire 15-month study</p>
+                                      <p>- Hired, trained, and led team of 3-5 local villagers to assist with fieldwork</p>
+                                      <p>Extensive use of handheld GPS, GIS software, and Excel</p>
+                                      <p>Coauthored “Chimpanzee accumulative stone throwing” (manuscript published in <a href="https://www.nature.com/articles/srep22219" target="_blank">Nature Scientific Reports</a>)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- experience section -->
+
+            <div id="education" class="education-section bg-color section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="section-title">
+                                <h1>Education</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="section-content">
+                                <div class="text-info">
+                                    <p>I am constantly going out of my way to learn new things and develop new skills, and I consider myself a lifetime learner. As such I've formally studied a wide variety of subjects, from Sanskrit to multi-threaded Java applications.</p>
+                                </div>
+                                <div class="education-info">
+                                    <img id="learnHeader" class="img-responsive" src="images/education/learn.png" alt="Image">
+                                    <h5>Full Stack Web Development</h5>
+                                    <h6>1999 - 2003</h6>
+                                    <p>- 12 week full-time Javascript bootcamp where I learned the Node/React/Express/PostgreSQL stack</p>
+                                    <p>- <a href="https://www.learnacademy.org/curriculum?learn_class=9" target="_blank">Curriculum</a> also included HTML, CSS, Flex, Bootstrap, ES6 syntax, RESTful API's, flux pattern, Git, ejs layouts</p>
+                                    <p>- In class lectures mixed with extensive pair programming</p>
+                                    <p>- Classwork and group projects available on <a href="https://github.com/alextickle" target="_blank">gitHub</a></p>
+                                </div>
+                                <hr>
+                                <div class="education-info">
+                                    <img id="ucsdHeader" class="img-responsive" src="images/education/ucsd.jpg" alt="Image">
+                                    <h5>Java Programming Certificate</h5>
+                                    <h6>July 2016 - August 2017</h6>
+                                    <p>- Year long part-time programming certificate program offered by UCSD Extension</p>
+                                    <p>- Program is geared towards preparing students for the Oracle Java Associate certification exam, which I plan on taking in October</p>
+                                    <ul>- <i>Relevant Courses:</i>
+                                      <li>Introduction to Programming Using Java | CSE-41242</li>
+                                      <li>Java Programming I: Fundamental Java Concepts | CSE-40479</li>
+                                      <li>Java Programming II: Core Java Programming | CSE-40480</li>
+                                      <li>Java Programming III : Intermediate Java Programming | CSE-40481</li>
+                                      <li>Java Programming IV : Advanced Java Programming Structures | CSE-40482</li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="education-info">
+                                    <img id="pennHeader" class="img-responsive" src="images/education/penn.jpg" alt="Image">
+                                    <h5>Bachelor of Arts, Anthropology</h5>
+                                    <h6>2009 - 2013</h6>
+                                    <p>- Graduated Magna Cum Laude, GPA = 3.75/4.0</p>
+                                    <p>- Senior Honors Thesis: <a href="http://repository.upenn.edu/cgi/viewcontent.cgi?article=1040&context=anthro_seniortheses" target="_blank"><i>Uncontacted Peoples of the Javari Valley</i></a></p>
+                                    <p>- studied abroad my junior year at Universidade Eduardo Mondlane in Maputo, Mozambique where I conducted ethnographic fieldwork on human-animal conflict outside an elephant reserve with funding from Penn's Anthropology department</p>
+                                </div>
+                                <div class="language-skill">
+                                    <div class="text-info">
+                                        <h4>Foreign Languages</h4>
+                                        <p>Foreign Languages are a hobby of mine. During my undergrad at Penn I had the privilege of taking classes in Portuguese, French, German, and Spanish. While working as a Field Site Manager I learned to speak Jula to better communicate with my colleagues. Nowadays I study Norwegian and Sanskrit in my free time.</p>
+                                    </div>
+                                    <ul>
+                                        <li class="chart" data-percent="80">
+                                            <span class="percent percent1"></span>
+                                            <h5>French</h5>
+                                        </li>
+                                        <li class="chart" data-percent="70">
+                                            <span class="percent percent2"></span>
+                                            <h5>Portuguese</h5>
+                                        </li>
+                                        <li class="chart" data-percent="60">
+                                            <span class="percent percent3"></span>
+                                            <h5>Spanish</h5>
+                                        </li>
+                                        <li class="chart" data-percent="40">
+                                            <span class="percent percent4"></span>
+                                            <h5>German</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- education section -->
+
+            <div id="portfolio" class="portfolio-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="section-title">
+                                <h1>Projects</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="text-info">
+                                <p>Click on the panels below for a detailed description of each project.</p>
+                            </div>
+                            <div class="portfolio-content">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="portfolio-item">
+                                          <a href="./arcade.html">
+                                            <img class="img-responsive portfolio-thumbnail" src="images/portfolio/arcade.png" alt="Image">
+                                            <div class="portfolio-overlay">
+                                              <div class="portfolio-info">
+                                                  <h3>Arcade</h3>
+                                                  <p>Simple Express app that serves four arcade-style single page applications: Asteroids, Battleship, Black Jack, and Turtle Graphics.</p>
+                                                  <p>Stack: Node, Express, jQuery, HTML, CSS</p>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="portfolio-item">
+                                        <a href="./oregon-trail.html">
+                                          <img class="img-responsive portfolio-thumbnail" src="images/portfolio/oregontrail.png" alt="Image">
+                                          <div class="portfolio-overlay">
+                                            <div class="portfolio-info">
+                                                <h3>Oregon Trail</h3>
+                                                <p>'Oregon Trail' computer game implemented as an Express web application.</p>
+                                                <p>Stack: Node, Express, Postgres SQL, HTML, CSS</p>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="portfolio-item">
+                                        <a href="./crud.html">
+                                          <img class="img-responsive portfolio-thumbnail" src="images/portfolio/crud.png" alt="Image">
+                                          <div class="portfolio-overlay">
+                                            <div class="portfolio-info">
+                                                <h3>Java CRUD App</h3>
+                                                <p>Java CRUD application with MVC architecture.</p>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="portfolio-item">
+                                        <a href="./breakfast-club.html">
+                                          <img class="img-responsive portfolio-thumbnail" src="images/portfolio/splash.png" alt="Image">
+                                          <div class="portfolio-overlay">
+                                            <div class="portfolio-info">
+                                                <h3>Breakfast Club</h3>
+                                                <p>React app that allows users to organize a weekly breakfast meetup. Makes use of the Yelp API. Group project for LEARN Academy.</p>
+                                                <p>Stack: Node, React, Express, PostgreSQL</p>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- portfolio section -->
+
+            <div id="contact" class="contact-section bg-color section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="section-title">
+                                <h1>Contact Me</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="section-content">
+                                <div class="text-info">
+                                    <p id="feel-free">Feel free to reach out by phone or email, and be sure to check out my gitHub.</p>
+                                </div>
+                                <div class="address">
+                                    <ul>
+                                        <li>
+                                            <div class="icons icons1">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </div>
+                                            <h3>Mobile</h3>
+                                            <p>(619) 736-1039</p>
+                                        </li>
+                                        <li>
+                                            <div class="icons icons2">
+                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                            </div>
+                                            <h3>Email address</h3>
+                                            <a href="mailto:alexander.tickle@gmail.com">alexander.tickle@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <div class="icons icons3">
+                                                <img id="linkedin-icon" src="images/linkedin-icon.png"/>
+                                            </div>
+                                            <a href="https://www.linkedin.com/in/alexander-tickle/" target="_blank"><h3>LinkedIn</h3></a>
+                                        </li>
+                                        <li>
+                                            <div class="icons icons4">
+                                                <i class="fa fa-github-alt" aria-hidden="true"></i>
+                                            </div>
+                                            <a href="https://github.com/alextickle" target="_blank"><h3>GitHub</h3></a>
+                                            <p>Pinned repositories:</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- contact section -->
+
+            <div id="blog" class="blog-section section-padding">
+                <div class="container">
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="container text-center">
+                    <div class="footer">
+                        <p> &copy; 2017 <a href="#">Alexander Tickle.</a> All Rights Reserved</p>
+                    </div>
+                </div><!-- container -->
+            </div><!-- footer -->
+        </div><!-- main wrapper -->
+
+        <!-- JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/counterup.min.js"></script>
+        <script src="js/inview.min.js"></script>
+        <script src="js/easypiechart.js"></script>
+        <script src="js/magnific-popup.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

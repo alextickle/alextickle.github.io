@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Theme Region">
+        <meta name="description" content="">
+
+        <title>Arcade</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/mystyling.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Sacramento" rel="stylesheet">
+
+        <!-- icons -->
+        <link rel="icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        <div class="main-wrapper home-two">
+            <div class="container">
+                <div id="navigation" class="menu-two">
+                     <div class="navbar">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                             <div class="navbar-brand logo">
+                                <a href="index.html"><img id="prof-logo" class="img-responsive" src="images/prof-logo.png" alt="Image" ></a>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <nav id="mainmenu">
+                                <ul class="nav navbar-nav">
+                                    <li class=" dropdown">
+                                        <a href="index.html#home-banner">Home</a>
+                                    </li>
+                                    <li><a href="index.html#about">About Me</a></li>
+                                     <li><a href="index.html#skill">Skills</a></li>
+                                     <li><a href="index.html#experience">Experience</a></li>
+                                     <li><a href="index.html#education">Education</a></li>
+                                     <li><a href="index.html#portfolio">Projects</a></li>
+                                     <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div><!-- navbar -->
+                </div><!-- navigation -->
+            </div><!-- container -->
+
+
+
+            <div id="blog" class="blog-section section-padding">
+                <div class="container">
+                  <div id="header-row" class="row">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-2">
+                      <h1>Arcade</h1>
+                      <a href="https://github.com/alextickle/arcade" target="_blank"><h7>gitHub |</h7></a>
+                      <a href="https://arcade-express.herokuapp.com/" target="_blank"><h7>Launch app</h7></a>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h3>Overview</h3>
+                      <p>I've found writing simple computer games to be an extremely effective way to practice applying programming concepts. I decided to combine a few of the games I've written into 'Arcade', which is a simple Express web application that serves four arcade-style single page applications: Asteroids, Battleship, Black Jack, and Turtle Graphics. These SPAs were originally independent side projects that I worked on for varying amounts of time at different stages in my studies. They all posed unique technical challenges. Music courtesy of Vector Hold and Le Matos.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h3>Asteroids</h3>
+                      <p>A game state object tracks the movements of asteroids, lasers, and the player using a two dimensional array. The game state's render function is called whenever any change is made to the array and simply recomputes the appropriate CSS properties. Movement is handled using numerous setInterval function calls. One setInterval call sets up the point scoring, another initiates the constant generation of asteroids, one manages the laser charging, and a fourth manages the laser as it advances.</p>
+                      <p>I added a leveling up dynamic to the game whereby the speed of asteroid generation (but also point generation) increases by 50% every 5000 points. This makes gameplay much more challenging as time goes on. My biggest implementation challenge was keeping track of all the setInterval calls. The game state's render function is being called quite frequently, which made the game difficult to debug.</p>
+                      <img class="arcade-img" src="./images/portfolio/arcade/asteroids.png">
+                    </div>
+                    <div class="col-sm-6">
+                      <h3>Battleship</h3>
+                      <p>This game originated as an in-class project at LEARN Academy. The original specification was to randomly generate ships in a single grid, and then give the player 20 shots at finding them all. I quickly decided that this was much less interesting to program than real battleship gameplay, where two players take shots until one fleet is destroyed. On my own I began experimenting with having two grids, one for the player to shoot at and one for the computer opponent. Orignally the computer picked cells at random. I added a self-placement feature that made heavy use of jQuery to immediately show the player whether or not a ship placement was valid or not.</p>
+                      <p>Finally I moved on to gradually improving the computer opponent's targeting algorithm. This was accomplished through the use of a 'seeker' object that stored data related to the computer's most recent hits and then systematically searched nearby squares until the recently hit ship was sunk. The logic in the seeker object turned out to be the most complex code that I had written up to that point, which was unexpected because from a human perspective good battleship strategy is quite obvious and intuitive. The process of formalizing an intuitive strategy into precise rules was demanding, but now the computer is a competent opponent.</p>
+                      <img class="arcade-img" src="./images/portfolio/arcade/battleship.png">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h3>Black Jack</h3>
+                      <p>In the fall of 2016 I wrote a command line version of black jack for UCSD Extension's Java II course. Once I began practicing web development a few months later I decided to translate the original Java program into Javascript so that I could display it in the web browser. This is one of the my first Javascript programs. It makes use of jQuery to toggle the visibility of buttons on and off.</p>
+                      <img class="arcade-img" src="./images/portfolio/arcade/blackjack.png">
+                    </div>
+                    <div class="col-sm-6">
+                      <h3>Turtle Graphics</h3>
+                      <p>I wrote this implementation of turtle graphics because I wanted to get more comfortable with two dimensional arrays. The user moves a relative cursor (a turtle) upon a Cartesian plane by inputting sequences of numbered commands. Any drawable shape can be represented by a similar sequence of precise commands.</p>
+                      <p>The most significant challenge of writing this program was developing a function to compute whether or not a proposed sequence of moves would place the turtle out of bounds.</p>
+                      <img class="arcade-img" src="./images/portfolio/arcade/turtlegraphics.png">
+                    </div>
+                  </div>
+                </div><!-- container -->
+            </div><!-- blog section -->
+
+            <div id="footer">
+                <div class="container text-center">
+                    <div class="footer">
+                        <p> &copy; 2017 <a href="#">Alexander Tickle.</a> All Rights Reserved</p>
+                    </div>
+                </div><!-- contaner -->
+            </div><!-- footer -->
+        </div><!-- main wrapper -->
+
+       <!-- JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/counterup.min.js"></script>
+        <script src="js/inview.min.js"></script>
+        <script src="js/easypiechart.js"></script>
+        <script src="js/magnific-popup.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
