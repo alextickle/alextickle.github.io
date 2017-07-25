@@ -46,6 +46,10 @@
   margin-top: 5%;
 }
 
+.edu-img {
+  border: 2px solid black;
+}
+
 #prof-logo {
   border-radius: 50%;
 }
