@@ -76,3 +76,9 @@
     margin-top: -20vh;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  #home-banner {
+    margin-top: -25vh;
+  }
+}
