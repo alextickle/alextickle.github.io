@@ -1,56 +1,56 @@
 #no-vertical-margin {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #no-vertical-margin {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 #no-vertical-margin1 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 #no-vertical-margin2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 #no-vertical-margin3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 #no-vertical-margin4 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 #no-vertical-margin5 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 #no-vertical-margin6 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 #no-vertical-margin7 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .float-right {
-  float: right;
-  clear: none;
+	float: right;
+	clear: none;
 }
 
 #feel-free {
-  margin-top: 5%;
+	margin-top: 5%;
 }
 
 .edu-img {
-  border: 2px solid black;
+	border: 2px solid black;
 }
 
 #prof-logo {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 /*#banner-info {
@@ -58,27 +58,27 @@
 }*/
 
 @media only screen and (max-width: 500px) {
-  #home-banner {
-    margin-top: -10vh;
-  }
-  #banner-info {
-    background-color: white;
-    padding-top: 35px;
-    padding-left: 35px;
-  }
-  #prof-logo {
-    height: 40px;
-  }
+	#home-banner {
+		margin-top: -10vh;
+	}
+	#banner-info {
+		background-color: white;
+		padding-top: 35px;
+		padding-left: 35px;
+	}
+	#prof-logo {
+		height: 40px;
+	}
 }
 
 @media only screen and (max-width: 350px) {
-  #home-banner {
-    margin-top: -20vh;
-  }
+	#home-banner {
+		margin-top: -20vh;
+	}
 }
 
 @media only screen and (max-width: 320px) {
-  #home-banner {
-    margin-top: -25vh;
-  }
+	#home-banner {
+		margin-top: -25vh;
+	}
 }
