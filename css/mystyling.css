@@ -53,6 +53,10 @@
 	border-radius: 50%;
 }
 
+#attribution {
+	text-align: right;
+}
+
 /*#banner-info {
   border-radius: 15%;
 }*/
